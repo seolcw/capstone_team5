@@ -12,6 +12,22 @@
 
 공통: `cs_agent/common.py` (데이터·기준 시각 2026-11-28(토) 14:00·날짜 유틸·세션 범위 도구·trace)
 
+## 처음 세팅 (팀원)
+
+```powershell
+git clone https://github.com/seolcw/capstone_team5.git
+cd capstone_team5
+copy .env.example .env               # 값 확인 후 저장 (.env 는 커밋 금지)
+py -m uv sync                        # Python 3.14 + 의존성 설치
+py -m uv run python 01_chat.py       # LLM 연결 확인 (SSH 터널 필요)
+```
+
+## 협업 규칙
+
+- `main` 에 직접 push 하지 말고 브랜치(`feat/...`, `fix/...`)를 만들어 PR 로 합칩니다.
+- 작업 시작 전 `git pull` 로 최신 `main` 을 받습니다.
+- `results/` 는 각자 로컬에만 남습니다. 보고서에 쓸 결과만 `git add -f` 로 올립니다.
+
 ## 실행
 
 ```powershell

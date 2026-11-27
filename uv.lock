@@ -27,7 +27,7 @@ wheels = [
 [[package]]
 name = "capstone-team5"
 version = "0.1.0"
-source = { editable = "." }
+source = { virtual = "." }
 dependencies = [
     { name = "openai" },
     { name = "python-dotenv" },
