@@ -12,19 +12,23 @@ import statistics
 import time
 from collections import defaultdict
 
-from cs_agent import v0_naive_rag, v1_naive_agent, v2_hybrid
+from cs_agent import v0_naive_rag, v1_naive_agent, v1_plus, v2_hybrid, v3_hybrid
 
 # 집중 영역: 시스템 실행 — 비즈니스 로직 위반 (취소·반품 가능 여부 판정)
 TARGET_CASES = ["PUB-005", "PUB-006", "PUB-007", "PUB-008", "PUB-009",
                 "PUB-010", "PUB-011", "PUB-017", "PUB-019", "PUB-025"]
-VERSIONS = {"v0": v0_naive_rag.run, "v1": v1_naive_agent.run, "v2": v2_hybrid.run}
+# v1+ 영역: 지식 검색 정보 충돌 · 데이터 정합성 (배송조회·정책문의)  →  --cases info
+INFO_CASES = ["PUB-001", "PUB-002", "PUB-003", "PUB-004", "PUB-012", "PUB-013",
+              "PUB-014", "PUB-022", "PUB-023", "PUB-024", "PUB-028", "PUB-029"]
+VERSIONS = {"v0": v0_naive_rag.run, "v1": v1_naive_agent.run, "v1p": v1_plus.run, "v2": v2_hybrid.run, "v3": v3_hybrid.run}
+ALL_CASES = [f"PUB-{n:03d}" for n in range(1, 31)]  # --cases all
 ROOT = pathlib.Path(__file__).parent
 
 
-def load_cases(ids):
-    rows = [json.loads(l) for l in (ROOT / "data" / "eval_public.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
+def load_cases(ids, data="eval_public.jsonl"):
+    rows = [json.loads(l) for l in (ROOT / "data" / data).read_text(encoding="utf-8").splitlines() if l.strip()]
     by_id = {r["id"]: r for r in rows}
-    return [by_id[i] for i in ids]
+    return list(by_id.values()) if ids == ["all"] else [by_id[i] for i in ids]
 
 
 def score(case, out):
@@ -52,7 +56,7 @@ def run_one(fn, case, version):
 
 
 def summarize(results, cases, versions, runs):
-    lines = [f"# 평가 결과 — 비즈니스 로직 케이스 {len(cases)}개 × {runs}회\n"]
+    lines = [f"# 평가 결과 — 케이스 {len(cases)}개 × {runs}회\n"]
     head = "| 지표 | " + " | ".join(versions) + " |\n|---|" + "---|" * len(versions)
     rows = defaultdict(list)
     for v in versions:
@@ -76,8 +80,9 @@ def summarize(results, cases, versions, runs):
         rows["평균 LLM 호출 수"].append(f"{statistics.mean(r['llm_calls'] for r in rs):.1f}")
         rows["평균 토큰 (입력+출력)"].append(f"{statistics.mean(r['prompt_tokens'] + r['completion_tokens'] for r in rs):,.0f}")
         rows["latency 중앙값 (초)"].append(f"{statistics.median(r['latency_s'] for r in rs):.1f}")
-        if v == "v2":
-            rows["v2 출력검증 → draft 대체 횟수"] = [""] * (len(versions) - 1) + [f"{sum(bool(r.get('fallback')) for r in rs)}건"]
+        rows["출력검증 → draft 대체 횟수 (v2·v3)"].append(f"{sum(bool(r.get('fallback')) for r in rs)}건" if v in ("v2", "v3") else "")
+        rows["경로 (v3: 코드/정책/agent)"].append(" · ".join(f"{k} {n}" for k, n in sorted(
+            __import__("collections").Counter(r.get("route", "-") for r in rs).items())) if v == "v3" else "")
     lines.append(head)
     for k, vals in rows.items():
         vals = vals + [""] * (len(versions) - len(vals))
@@ -107,9 +112,11 @@ def main():
     ap.add_argument("--versions", nargs="+", default=list(VERSIONS))
     ap.add_argument("--cases", nargs="+", default=TARGET_CASES)
     ap.add_argument("--runs", type=int, default=3)
+    ap.add_argument("--data", default="eval_public.jsonl", help="평가 데이터 파일 (data/ 아래), 예: holdout_team.jsonl")
     args = ap.parse_args()
 
-    cases = load_cases(args.cases)
+    ids = {"info": INFO_CASES}.get(args.cases[0], args.cases) if len(args.cases) == 1 else args.cases
+    cases = load_cases(ids, args.data)
     outdir = ROOT / "results" / time.strftime("%Y%m%d-%H%M%S")
     outdir.mkdir(parents=True, exist_ok=True)
     results = []
