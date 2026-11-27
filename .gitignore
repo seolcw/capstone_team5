@@ -1,4 +1,4 @@
-# Python-generated files
+﻿# Python-generated files
 __pycache__/
 *.py[oc]
 build/
@@ -15,9 +15,8 @@ wheels/
 
 !.env.example
 
-# 실행 결과 (각자 로컬에만 저장; REPORT.md 가 인용하는 결과만 커밋)
-results/*
-!results/20261127-135321/
+# 실행 결과 (각자 로컬에만 저장)
+results/
 
 # OS / editor
 .DS_Store

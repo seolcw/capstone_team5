@@ -1,16 +1,20 @@
 # 캡스톤 5팀 — E-commerce 상담 에이전트
 
-집중 영역: **시스템 실행 — 비즈니스 로직 위반** (취소·반품 가능 여부를 LLM 이 잘못 판단하는 문제)
+환경설정 단계에서 구성한 **베이스라인 2종(v0, v1)** 과 평가 스크립트입니다.
+이 베이스라인을 실행해 운영 중 발생하는 문제를 확인하고, 개선 버전은 이후 브랜치·PR 로 추가합니다.
 
-## 버전별 구성 (같은 데이터·같은 도구, 판단 주체만 다름)
+## 베이스라인 구성 (주제 설명 PDF 11~12쪽)
 
-| 버전 | 파일 | 구성 | 판단 주체 |
+| 버전 | 파일 | 구성 | 주요 한계 |
 |---|---|---|---|
-| v0 Naive RAG | `cs_agent/v0_naive_rag.py` | 질문 → 문서 검색(필터 없음) → LLM 답변 | LLM (주문 데이터 없음) |
-| v1 Naive Agent | `cs_agent/v1_naive_agent.py` | LLM 이 도구·순서 자율 결정, 정책 읽고 가능 여부 판단 | LLM |
-| v2 Hybrid | `cs_agent/v2_hybrid.py` | LLM 의도 분류 → 코드 판정(`rules.py`) → LLM 문장화 → 코드 출력 검증 | 코드 |
+| v0 — Baseline A. Naive RAG | `cs_agent/v0_naive_rag.py` | 질문 → 정책 문서 검색(필터 없음) → LLM 답변 | 주문·배송 정보 조회 불가, 미승인·구버전 문서도 그대로 참고 |
+| v1 — Baseline B. Naive Agent | `cs_agent/v1_naive_agent.py` | LLM 이 도구와 실행 순서를 스스로 결정 | 도구 호출 순서·횟수가 매번 다름, 조회 결과를 보고도 가능 여부를 잘못 판단 |
 
-공통: `cs_agent/common.py` (데이터·기준 시각 2026-11-28(토) 14:00·날짜 유틸·세션 범위 도구·trace)
+- 공통: `cs_agent/common.py` (데이터 로드, 기준 시각 2026-11-28(토) 14:00, 날짜 유틸, 세션 범위 도구, 실행 trace)
+- LLM 연결: `llm_client.py` (`.env` 의 `LLM_BASE_URL`, `LLM_MODEL` 사용)
+- v0 의 문서 검색은 임베딩·벡터 DB 대신 글자 2개 겹침(bigram) 검색으로 단순화했습니다.
+
+v1 이 쓰는 도구: `list_orders`, `get_order`, `get_shipment`, `get_return_conditions`, `search_knowledge`, `escalate_to_agent`
 
 ## 처음 세팅 (팀원)
 
@@ -25,15 +29,21 @@ py -m uv run python 01_chat.py       # LLM 연결 확인 (SSH 터널 필요)
 ## 실행
 
 ```powershell
-py -m uv run python test_rules.py          # LLM 없이 판정 로직 점검
-py -m uv run python eval_run.py            # v0/v1/v2 × 케이스 10개 × 3회
-py -m uv run python eval_run.py --versions v2 --runs 1 --cases PUB-006
+py -m uv run python eval_run.py            # v0/v1 × 케이스 10개 × 3회
+py -m uv run python eval_run.py --versions v1 --runs 1 --cases PUB-006
 ```
 
-결과는 `results/<시각>/summary.md`(비교표·실패 상세)와 `runs.jsonl`(실행별 trace)에 저장됩니다.
-SSH 터널(`ssh -N -L 8000:localhost:8000 tunnel@117.16.244.167`)이 켜져 있어야 합니다.
+- 터미널에는 실행마다 `v1 PUB-006 run0: FAIL tools=1 llm=2 6.03s` 처럼 통과 여부·도구 호출 수·LLM 호출 수·소요 시간이 출력됩니다.
+- 결과는 `results/<시각>/summary.md`(비교표·실패 답변)와 `runs.jsonl`(실행별 trace)에 저장되며, 커밋되지 않습니다.
+- SSH 터널(`ssh -N -L 8000:localhost:8000 tunnel@117.16.244.167`)이 켜져 있어야 합니다.
 
-## 테스트 케이스 (eval_public 중 판정 관련 10건)
+## 채점 방식
+
+각 케이스의 `must_include` 표현이 답변에 **모두** 있고 `must_not_include` 표현이 **하나도** 없으면 PASS 입니다.
+답변 방식(answer / confirm / clarify / escalate) 일치는 별도 지표로 집계합니다.
+문자열 포함 여부만 보므로, 뜻이 맞아도 표현이 다르면 FAIL, 틀린 안내라도 금지 표현과 문구가 다르면 걸리지 않을 수 있습니다.
+
+## 테스트 케이스 (eval_public 중 취소·반품 판정 관련 10건)
 
 PUB-005(결제완료 취소 → 확인 질문), 006(배송중 취소 → 불가·반품 안내), 007(반품 기한 12/1),
 008(기한 경과), 009(신선식품), 010(상품별 30일 무료 우선), 011(Final Sale), 017(설치 TV·고액 E06),

@@ -1,7 +1,7 @@
-"""v0 / v1 / v2 를 같은 테스트셋으로 실행하고 수정 전후를 비교
+"""Baseline v0 / v1 을 같은 테스트셋으로 실행하고 결과를 비교
 
-  py -m uv run python eval_run.py                 # 전체 (버전 3개 × 케이스 10개 × 3회)
-  py -m uv run python eval_run.py --versions v1 v2 --runs 1 --cases PUB-006 PUB-019
+  py -m uv run python eval_run.py                 # 전체 (버전 2개 × 케이스 10개 × 3회)
+  py -m uv run python eval_run.py --versions v1 --runs 1 --cases PUB-006 PUB-019
 
 결과: results/<시각>/runs.jsonl (실행별 trace 포함), results/<시각>/summary.md
 """
@@ -12,12 +12,12 @@ import statistics
 import time
 from collections import defaultdict
 
-from cs_agent import v0_naive_rag, v1_naive_agent, v2_hybrid
+from cs_agent import v0_naive_rag, v1_naive_agent
 
 # 집중 영역: 시스템 실행 — 비즈니스 로직 위반 (취소·반품 가능 여부 판정)
 TARGET_CASES = ["PUB-005", "PUB-006", "PUB-007", "PUB-008", "PUB-009",
                 "PUB-010", "PUB-011", "PUB-017", "PUB-019", "PUB-025"]
-VERSIONS = {"v0": v0_naive_rag.run, "v1": v1_naive_agent.run, "v2": v2_hybrid.run}
+VERSIONS = {"v0": v0_naive_rag.run, "v1": v1_naive_agent.run}
 ROOT = pathlib.Path(__file__).parent
 
 
@@ -76,8 +76,6 @@ def summarize(results, cases, versions, runs):
         rows["평균 LLM 호출 수"].append(f"{statistics.mean(r['llm_calls'] for r in rs):.1f}")
         rows["평균 토큰 (입력+출력)"].append(f"{statistics.mean(r['prompt_tokens'] + r['completion_tokens'] for r in rs):,.0f}")
         rows["latency 중앙값 (초)"].append(f"{statistics.median(r['latency_s'] for r in rs):.1f}")
-        if v == "v2":
-            rows["v2 출력검증 → draft 대체 횟수"] = [""] * (len(versions) - 1) + [f"{sum(bool(r.get('fallback')) for r in rs)}건"]
     lines.append(head)
     for k, vals in rows.items():
         vals = vals + [""] * (len(versions) - len(vals))
