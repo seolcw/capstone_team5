@@ -1,0 +1,1221 @@
+[
+  {
+    "faq_id": "FAQ-001",
+    "category": "배송",
+    "question": "배송은 얼마나 걸리나요?",
+    "answer": "평일 오후 2시 이전 결제 완료 시 당일 출고되며, 출고 후 1~3 영업일 내 도착합니다. 주말·공휴일은 영업일에서 제외됩니다.",
+    "related_docs": [
+      "SHIP-004"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 10244
+  },
+  {
+    "faq_id": "FAQ-002",
+    "category": "배송",
+    "question": "배송비는 얼마인가요?",
+    "answer": "기본 배송비는 3,000원이며, 쿠폰·적립금 차감 후 결제금액 30,000원 이상이면 무료배송입니다.",
+    "related_docs": [
+      "SHIP-001"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 6900
+  },
+  {
+    "faq_id": "FAQ-003",
+    "category": "배송",
+    "question": "무료배송 기준이 5만원 아니었나요?",
+    "answer": "2026년 7월 1일부터 무료배송 기준이 50,000원에서 30,000원으로 변경되었습니다.",
+    "related_docs": [
+      "SHIP-001",
+      "SHIP-002"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 4701
+  },
+  {
+    "faq_id": "FAQ-004",
+    "category": "배송",
+    "question": "여러 번 나눠 주문하면 합산해서 무료배송 되나요?",
+    "answer": "무료배송 기준은 주문 1건 단위로 적용되며, 여러 주문을 합산하지 않습니다.",
+    "related_docs": [
+      "SHIP-001"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 16296
+  },
+  {
+    "faq_id": "FAQ-005",
+    "category": "배송",
+    "question": "제주도도 배송되나요? 추가 배송비가 있나요?",
+    "answer": "제주 지역은 3,000원, 도서산간 지역은 5,000원의 추가 배송비가 부과되며, 무료배송 조건을 충족해도 별도로 부과됩니다. 배송 기간은 1~2 영업일 더 소요될 수 있습니다.",
+    "related_docs": [
+      "SHIP-005"
+    ],
+    "status": "published",
+    "updated_at": "2026-03-02",
+    "view_count": 4214
+  },
+  {
+    "faq_id": "FAQ-006",
+    "category": "배송",
+    "question": "해외 배송 되나요?",
+    "answer": "현재 해외 배송은 지원하지 않습니다.",
+    "related_docs": [
+      "SHIP-001"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 10314
+  },
+  {
+    "faq_id": "FAQ-007",
+    "category": "배송",
+    "question": "새벽배송 가능한 지역은 어디인가요?",
+    "answer": "서울, 경기, 인천 일부 지역에서 새벽배송 표시 상품에 한해 이용 가능합니다. 제주·도서산간은 이용할 수 없습니다.",
+    "related_docs": [
+      "SHIP-006",
+      "SHIP-005"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 17113
+  },
+  {
+    "faq_id": "FAQ-008",
+    "category": "배송",
+    "question": "새벽배송은 몇 시까지 주문해야 하나요?",
+    "answer": "밤 11시 이전 주문 시 다음날 오전 7시 이전 문 앞으로 배송됩니다.",
+    "related_docs": [
+      "SHIP-006"
+    ],
+    "status": "published",
+    "updated_at": "2026-03-02",
+    "view_count": 1122
+  },
+  {
+    "faq_id": "FAQ-009",
+    "category": "배송",
+    "question": "새벽배송 배송비는 얼마인가요?",
+    "answer": "새벽배송은 40,000원 이상 무료, 미만 시 3,500원입니다.",
+    "related_docs": [
+      "SHIP-006"
+    ],
+    "status": "published",
+    "updated_at": "2026-08-12",
+    "view_count": 9692
+  },
+  {
+    "faq_id": "FAQ-010",
+    "category": "배송",
+    "question": "배송지를 변경하고 싶어요.",
+    "answer": "주문 상태가 '결제완료' 또는 '상품준비중'일 때 마이페이지 > 주문상세에서 변경할 수 있습니다. '배송중'부터는 변경이 불가합니다.",
+    "related_docs": [
+      "SHIP-008"
+    ],
+    "status": "published",
+    "updated_at": "2026-03-02",
+    "view_count": 13853
+  },
+  {
+    "faq_id": "FAQ-011",
+    "category": "배송",
+    "question": "이미 배송중인데 주소를 바꿀 수 있나요?",
+    "answer": "배송중 상태에서는 A사에서 배송지를 변경할 수 없으며, 택배사에 직접 요청하셔야 합니다. 택배사 사정상 변경이 불가할 수 있습니다.",
+    "related_docs": [
+      "SHIP-008"
+    ],
+    "status": "published",
+    "updated_at": "2026-10-05",
+    "view_count": 7671
+  },
+  {
+    "faq_id": "FAQ-012",
+    "category": "배송",
+    "question": "배송 조회는 어디서 하나요?",
+    "answer": "마이페이지 > 주문내역 > 배송조회에서 택배사와 운송장 번호, 실시간 배송 위치를 확인할 수 있습니다.",
+    "related_docs": [
+      "SHIP-004"
+    ],
+    "status": "published",
+    "updated_at": "2026-03-02",
+    "view_count": 4515
+  },
+  {
+    "faq_id": "FAQ-013",
+    "category": "배송",
+    "question": "배송완료로 나오는데 상품을 못 받았어요.",
+    "answer": "배송완료일로부터 7일 이내 고객센터로 신고해 주세요. 택배사 확인(최대 3 영업일) 후 재발송 또는 환불이 진행되며, 상담원이 확인 후 안내드립니다.",
+    "related_docs": [
+      "SHIP-009",
+      "MAN-001"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 5202
+  },
+  {
+    "faq_id": "FAQ-014",
+    "category": "배송",
+    "question": "상품이 파손되어 도착했어요.",
+    "answer": "수령 후 7일 이내 파손 부위 사진과 함께 접수해 주세요. 배송비는 회사가 부담하며, 상담원 확인 후 교환 또는 환불이 진행됩니다.",
+    "related_docs": [
+      "SHIP-009",
+      "REF-005"
+    ],
+    "status": "published",
+    "updated_at": "2026-08-12",
+    "view_count": 16776
+  },
+  {
+    "faq_id": "FAQ-015",
+    "category": "배송",
+    "question": "주문한 것과 다른 상품이 왔어요.",
+    "answer": "오배송은 수령 후 30일 이내 회사 부담으로 교환 또는 반품이 가능합니다. 사진을 첨부해 접수해 주세요.",
+    "related_docs": [
+      "REF-005"
+    ],
+    "status": "published",
+    "updated_at": "2026-08-12",
+    "view_count": 13168
+  },
+  {
+    "faq_id": "FAQ-016",
+    "category": "배송",
+    "question": "설치배송 상품은 언제 오나요?",
+    "answer": "결제 후 5~10 영업일 내 설치기사가 해피콜로 방문 일정을 협의합니다.",
+    "related_docs": [
+      "SHIP-007"
+    ],
+    "status": "published",
+    "updated_at": "2026-10-05",
+    "view_count": 15848
+  },
+  {
+    "faq_id": "FAQ-017",
+    "category": "배송",
+    "question": "설치 방문 일정을 바꿀 수 있나요?",
+    "answer": "방문 일정 확정 후 방문 2일 전까지 변경 가능합니다.",
+    "related_docs": [
+      "SHIP-007"
+    ],
+    "status": "published",
+    "updated_at": "2026-10-05",
+    "view_count": 7479
+  },
+  {
+    "faq_id": "FAQ-018",
+    "category": "배송",
+    "question": "주말에도 출고되나요?",
+    "answer": "출고는 평일에만 진행되며, 금요일 오후 2시 이후 결제 건은 다음 주 월요일에 출고됩니다. 도착 예정일도 영업일 기준으로 계산됩니다.",
+    "related_docs": [
+      "SHIP-004"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 2843
+  },
+  {
+    "faq_id": "FAQ-019",
+    "category": "배송",
+    "question": "배송이 늦어지면 보상이 있나요?",
+    "answer": "최초 도착 예정일보다 3 영업일 이상 지연된 경우 주문당 적립금 2,000원이 배송 완료 후 자동 지급됩니다. 불가항력, 사전 공지된 연휴 기간 등은 제외됩니다.",
+    "related_docs": [
+      "CPN-004"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 4159
+  },
+  {
+    "faq_id": "FAQ-020",
+    "category": "배송",
+    "question": "배송을 며칠 뒤에 받고 싶어요.",
+    "answer": "배송 보류(수령일 지정)는 최대 7일까지 가능하며, 신선식품은 불가합니다.",
+    "related_docs": [
+      "SHIP-008"
+    ],
+    "status": "published",
+    "updated_at": "2026-10-05",
+    "view_count": 4121
+  },
+  {
+    "faq_id": "FAQ-021",
+    "category": "주문/취소",
+    "question": "주문을 취소하고 싶어요.",
+    "answer": "'결제완료' 상태는 즉시 취소됩니다. '상품준비중'은 취소 요청 후 판매자 확인(최대 1 영업일)을 거치며, 이미 출고된 경우 거절될 수 있습니다. '배송중' 이후에는 취소가 불가합니다.",
+    "related_docs": [
+      "REF-003"
+    ],
+    "status": "published",
+    "updated_at": "2026-04-01",
+    "view_count": 16625
+  },
+  {
+    "faq_id": "FAQ-022",
+    "category": "주문/취소",
+    "question": "배송중인데 취소할 수 있나요?",
+    "answer": "배송중 상태에서는 취소가 불가합니다. 상품 수령 후 반품 절차를 이용해 주세요.",
+    "related_docs": [
+      "REF-003",
+      "REF-001"
+    ],
+    "status": "published",
+    "updated_at": "2026-04-01",
+    "view_count": 10358
+  },
+  {
+    "faq_id": "FAQ-023",
+    "category": "주문/취소",
+    "question": "여러 상품 중 일부만 취소할 수 있나요?",
+    "answer": "결제완료 상태에서 상품별 부분 취소가 가능합니다. 부분 취소 시 사용한 쿠폰은 복원되지 않습니다.",
+    "related_docs": [
+      "REF-003",
+      "REF-017"
+    ],
+    "status": "published",
+    "updated_at": "2026-08-12",
+    "view_count": 17025
+  },
+  {
+    "faq_id": "FAQ-024",
+    "category": "주문/취소",
+    "question": "무통장입금은 언제까지 입금해야 하나요?",
+    "answer": "주문 후 24시간 이내 미입금 시 자동 취소됩니다.",
+    "related_docs": [
+      "TOS-003"
+    ],
+    "status": "published",
+    "updated_at": "2026-08-12",
+    "view_count": 13137
+  },
+  {
+    "faq_id": "FAQ-025",
+    "category": "주문/취소",
+    "question": "주문 내역은 어디서 확인하나요?",
+    "answer": "마이페이지 > 주문내역에서 최근 주문과 상태를 확인할 수 있습니다.",
+    "related_docs": [],
+    "status": "published",
+    "updated_at": "2026-10-05",
+    "view_count": 3940
+  },
+  {
+    "faq_id": "FAQ-026",
+    "category": "주문/취소",
+    "question": "주문 후 옵션(사이즈/색상)을 바꿀 수 있나요?",
+    "answer": "출고 전 옵션 변경은 지원하지 않으며, 결제완료 상태에서 취소 후 재주문해 주세요. 수령 후에는 교환 정책을 따릅니다.",
+    "related_docs": [
+      "REF-003",
+      "REF-006"
+    ],
+    "status": "published",
+    "updated_at": "2026-04-01",
+    "view_count": 14930
+  },
+  {
+    "faq_id": "FAQ-027",
+    "category": "주문/취소",
+    "question": "새벽배송 주문은 언제까지 취소 가능한가요?",
+    "answer": "결제 후 1시간 이내 또는 밤 11시 이전 중 빠른 시점까지만 취소할 수 있습니다.",
+    "related_docs": [
+      "SHIP-006"
+    ],
+    "status": "published",
+    "updated_at": "2026-04-01",
+    "view_count": 14802
+  },
+  {
+    "faq_id": "FAQ-028",
+    "category": "주문/취소",
+    "question": "각인(주문제작) 상품도 취소되나요?",
+    "answer": "주문제작 상품은 제작 착수 전인 '결제완료' 상태에서만 취소 가능하며, 이후에는 취소·반품이 불가합니다.",
+    "related_docs": [
+      "REF-015"
+    ],
+    "status": "published",
+    "updated_at": "2026-04-01",
+    "view_count": 836
+  },
+  {
+    "faq_id": "FAQ-029",
+    "category": "주문/취소",
+    "question": "품절로 주문이 취소됐어요.",
+    "answer": "판매자 사정으로 결제 후 품절 취소된 경우 결제금액의 5%(최대 5,000원)를 적립금으로 3 영업일 이내 자동 지급합니다.",
+    "related_docs": [
+      "CPN-006"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 17221
+  },
+  {
+    "faq_id": "FAQ-030",
+    "category": "주문/취소",
+    "question": "결제수단을 변경할 수 있나요?",
+    "answer": "결제 후 결제수단 변경은 불가합니다. 결제완료 상태에서 취소 후 재주문해 주세요.",
+    "related_docs": [
+      "TOS-003"
+    ],
+    "status": "published",
+    "updated_at": "2026-10-05",
+    "view_count": 5657
+  },
+  {
+    "faq_id": "FAQ-031",
+    "category": "주문/취소",
+    "question": "영수증(카드전표/현금영수증)은 어디서 받나요?",
+    "answer": "마이페이지 > 주문상세 > 영수증 조회에서 발급할 수 있습니다.",
+    "related_docs": [],
+    "status": "published",
+    "updated_at": "2026-03-02",
+    "view_count": 10732
+  },
+  {
+    "faq_id": "FAQ-032",
+    "category": "주문/취소",
+    "question": "비회원으로 주문했는데 조회하려면?",
+    "answer": "주문번호와 주문자 휴대폰 번호 인증 후 조회할 수 있습니다.",
+    "related_docs": [
+      "MAN-003"
+    ],
+    "status": "published",
+    "updated_at": "2026-10-05",
+    "view_count": 13251
+  },
+  {
+    "faq_id": "FAQ-033",
+    "category": "반품/환불",
+    "question": "반품은 언제까지 가능한가요?",
+    "answer": "단순변심 반품은 수령일로부터 7일 이내 신청 가능합니다. 상품 하자·오배송은 30일 이내입니다. 상품별 조건이 있으면 상품별 조건이 우선합니다.",
+    "related_docs": [
+      "REF-001",
+      "REF-018"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 2811
+  },
+  {
+    "faq_id": "FAQ-034",
+    "category": "반품/환불",
+    "question": "반품 배송비는 얼마인가요?",
+    "answer": "단순변심 반품은 왕복 배송비 6,000원(초기 배송비 3,000원 + 반품 배송비 3,000원)이 고객 부담이며, 결제 시 배송비를 이미 내셨다면 3,000원만 차감됩니다. 하자·오배송은 회사가 부담합니다. 가구·설치가전 등 일부 상품은 별도 반품비가 적용됩니다.",
+    "related_docs": [
+      "REF-001",
+      "REF-012",
+      "REF-011"
+    ],
+    "status": "published",
+    "updated_at": "2026-08-12",
+    "view_count": 15287
+  },
+  {
+    "faq_id": "FAQ-035",
+    "category": "반품/환불",
+    "question": "반품 기간이 14일 아니었나요?",
+    "answer": "2026년 3월 1일부터 단순변심 반품 기간이 14일에서 7일로 변경되었습니다.",
+    "related_docs": [
+      "REF-001",
+      "REF-002"
+    ],
+    "status": "published",
+    "updated_at": "2026-04-01",
+    "view_count": 12904
+  },
+  {
+    "faq_id": "FAQ-036",
+    "category": "반품/환불",
+    "question": "불량 상품은 언제까지 반품되나요?",
+    "answer": "상품 하자는 수령일로부터 30일 이내 사진 첨부 후 신청 가능하며, 배송비는 회사가 부담합니다.",
+    "related_docs": [
+      "REF-005"
+    ],
+    "status": "published",
+    "updated_at": "2026-03-02",
+    "view_count": 11094
+  },
+  {
+    "faq_id": "FAQ-037",
+    "category": "반품/환불",
+    "question": "환불은 언제 되나요?",
+    "answer": "반품 상품 검수 완료 후 환불이 승인되며, 카드는 3~5 영업일, 계좌는 1~2 영업일, 간편결제는 1~3 영업일, 적립금은 즉시 환불됩니다.",
+    "related_docs": [
+      "REF-004"
+    ],
+    "status": "published",
+    "updated_at": "2026-08-12",
+    "view_count": 2079
+  },
+  {
+    "faq_id": "FAQ-038",
+    "category": "반품/환불",
+    "question": "계좌이체로 결제했는데 환불은 어떻게 되나요?",
+    "answer": "환불 승인 후 1~2 영업일 내 결제 계좌로 환불됩니다.",
+    "related_docs": [
+      "REF-004"
+    ],
+    "status": "published",
+    "updated_at": "2026-08-12",
+    "view_count": 10439
+  },
+  {
+    "faq_id": "FAQ-039",
+    "category": "반품/환불",
+    "question": "적립금으로 결제한 부분은 어떻게 환불되나요?",
+    "answer": "사용한 적립금은 즉시 적립금으로 반환되며, 기존 유효기간이 유지됩니다.",
+    "related_docs": [
+      "REF-004",
+      "REF-017"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 16622
+  },
+  {
+    "faq_id": "FAQ-040",
+    "category": "반품/환불",
+    "question": "옷 택을 뗐는데 반품할 수 있나요?",
+    "answer": "택(Tag)을 제거한 의류는 단순변심 반품이 불가합니다.",
+    "related_docs": [
+      "REF-007"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 1690
+  },
+  {
+    "faq_id": "FAQ-041",
+    "category": "반품/환불",
+    "question": "신발을 밖에서 한 번 신었는데 반품되나요?",
+    "answer": "실외 착용 흔적이 있는 신발은 반품이 불가합니다. 실내 시착은 가능합니다.",
+    "related_docs": [
+      "REF-008"
+    ],
+    "status": "published",
+    "updated_at": "2026-03-02",
+    "view_count": 12232
+  },
+  {
+    "faq_id": "FAQ-042",
+    "category": "반품/환불",
+    "question": "화장품을 개봉했는데 반품되나요?",
+    "answer": "개봉·사용한 화장품은 단순변심 반품이 불가합니다. 피부 트러블이 발생한 경우 수령 후 30일 이내 피부과 소견서를 제출하면 상담원 확인 후 반품 가능합니다.",
+    "related_docs": [
+      "REF-009"
+    ],
+    "status": "published",
+    "updated_at": "2026-04-01",
+    "view_count": 7490
+  },
+  {
+    "faq_id": "FAQ-043",
+    "category": "반품/환불",
+    "question": "신선식품도 반품되나요?",
+    "answer": "신선식품은 단순변심 반품이 불가합니다. 품질 이상은 수령 후 24시간 이내 사진과 함께 접수해 주세요.",
+    "related_docs": [
+      "REF-010"
+    ],
+    "status": "published",
+    "updated_at": "2026-08-12",
+    "view_count": 17951
+  },
+  {
+    "faq_id": "FAQ-044",
+    "category": "반품/환불",
+    "question": "냉동식품 반품되나요?",
+    "answer": "냉동식품은 단순변심 반품이 불가합니다. 품질 이상은 사진 첨부 후 접수해 주세요.",
+    "related_docs": [
+      "REF-010"
+    ],
+    "status": "published",
+    "updated_at": "2026-10-05",
+    "view_count": 17999
+  },
+  {
+    "faq_id": "FAQ-045",
+    "category": "반품/환불",
+    "question": "전자제품 박스를 뜯었는데 반품되나요?",
+    "answer": "박스 실링 개봉 시 단순변심 반품이 불가합니다. 초기불량은 수령 후 7일 이내 동일 제품으로 교환 가능합니다.",
+    "related_docs": [
+      "REF-011"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 15987
+  },
+  {
+    "faq_id": "FAQ-046",
+    "category": "반품/환불",
+    "question": "설치까지 끝난 TV도 반품되나요?",
+    "answer": "설치 완료된 가전은 단순변심 반품이 불가합니다. 제품 불량은 상담원 확인 후 처리됩니다.",
+    "related_docs": [
+      "REF-011"
+    ],
+    "status": "published",
+    "updated_at": "2026-03-02",
+    "view_count": 16742
+  },
+  {
+    "faq_id": "FAQ-047",
+    "category": "반품/환불",
+    "question": "가구 반품비는 얼마인가요?",
+    "answer": "가구 반품비는 상품별로 다르며, 대형가구는 일반적으로 50,000원 이상입니다. 상품 상세의 반품 조건을 확인해 주세요.",
+    "related_docs": [
+      "REF-012",
+      "REF-018"
+    ],
+    "status": "published",
+    "updated_at": "2026-03-02",
+    "view_count": 11957
+  },
+  {
+    "faq_id": "FAQ-048",
+    "category": "반품/환불",
+    "question": "조립한 가구도 반품되나요?",
+    "answer": "조립·설치 완료 후에는 단순변심 반품이 불가합니다.",
+    "related_docs": [
+      "REF-012"
+    ],
+    "status": "published",
+    "updated_at": "2026-04-01",
+    "view_count": 2302
+  },
+  {
+    "faq_id": "FAQ-049",
+    "category": "반품/환불",
+    "question": "책 비닐을 뜯었는데 반품되나요?",
+    "answer": "비닐 포장된 도서·음반은 개봉 시 반품이 불가합니다.",
+    "related_docs": [
+      "REF-013"
+    ],
+    "status": "published",
+    "updated_at": "2026-03-02",
+    "view_count": 5447
+  },
+  {
+    "faq_id": "FAQ-050",
+    "category": "반품/환불",
+    "question": "속옷이나 수영복도 반품되나요?",
+    "answer": "위생상품은 포장 개봉 시 단순변심 반품이 불가하며, 미개봉 상태는 7일 이내 반품 가능합니다.",
+    "related_docs": [
+      "REF-014"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 974
+  },
+  {
+    "faq_id": "FAQ-051",
+    "category": "반품/환불",
+    "question": "Final Sale 상품도 반품되나요?",
+    "answer": "Final Sale 표시 상품은 단순변심 반품·교환이 불가하며, 하자·오배송만 처리됩니다.",
+    "related_docs": [
+      "REF-016"
+    ],
+    "status": "published",
+    "updated_at": "2026-08-12",
+    "view_count": 2153
+  },
+  {
+    "faq_id": "FAQ-052",
+    "category": "반품/환불",
+    "question": "쿠폰 쓴 주문을 취소하면 쿠폰은 돌려받나요?",
+    "answer": "전체 취소·반품 시 쿠폰 유효기간이 남아 있으면 복원되고, 만료되었으면 복원되지 않습니다. 유효기간은 연장되지 않습니다.",
+    "related_docs": [
+      "REF-017",
+      "CPN-010"
+    ],
+    "status": "published",
+    "updated_at": "2026-08-12",
+    "view_count": 11779
+  },
+  {
+    "faq_id": "FAQ-053",
+    "category": "반품/환불",
+    "question": "일부 상품만 반품하면 쿠폰은 어떻게 되나요?",
+    "answer": "부분 반품 시 쿠폰은 복원되지 않으며, 쿠폰 할인액을 상품 금액 비율로 나누어 환불금에서 차감합니다. 남은 금액이 쿠폰 최소 주문금액 미만이면 할인액 전액이 차감됩니다.",
+    "related_docs": [
+      "REF-017"
+    ],
+    "status": "published",
+    "updated_at": "2026-04-01",
+    "view_count": 1633
+  },
+  {
+    "faq_id": "FAQ-054",
+    "category": "반품/환불",
+    "question": "무료배송 주문에서 일부만 반품하면 배송비가 생기나요?",
+    "answer": "부분 반품 후 남은 결제금액이 30,000원 미만이 되면 반품 배송비 3,000원에 더해 최초 면제된 배송비 3,000원이 환불금에서 차감됩니다.",
+    "related_docs": [
+      "SHIP-001"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 3483
+  },
+  {
+    "faq_id": "FAQ-055",
+    "category": "반품/환불",
+    "question": "반품 신청은 어떻게 하나요?",
+    "answer": "마이페이지 > 주문상세 > 반품신청에서 사유를 선택하면 1~2 영업일 내 택배기사가 회수 방문합니다.",
+    "related_docs": [
+      "REF-001"
+    ],
+    "status": "published",
+    "updated_at": "2026-04-01",
+    "view_count": 13757
+  },
+  {
+    "faq_id": "FAQ-056",
+    "category": "반품/환불",
+    "question": "반품 회수는 언제 오나요?",
+    "answer": "반품 신청 다음 영업일부터 택배기사가 방문하며, 지역에 따라 1~2 영업일 소요될 수 있습니다.",
+    "related_docs": [
+      "REF-001"
+    ],
+    "status": "published",
+    "updated_at": "2026-03-02",
+    "view_count": 11969
+  },
+  {
+    "faq_id": "FAQ-057",
+    "category": "반품/환불",
+    "question": "상품마다 반품 조건이 다르다는데요?",
+    "answer": "상품 상세 및 시스템에 등록된 상품별 조건이 카테고리 정책보다 우선 적용됩니다. 예: 프로모션 상품의 30일 무료 반품.",
+    "related_docs": [
+      "REF-018"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 11803
+  },
+  {
+    "faq_id": "FAQ-058",
+    "category": "교환",
+    "question": "교환은 어떤 경우에 가능한가요?",
+    "answer": "동일 상품의 옵션(사이즈·색상) 변경만 가능합니다.",
+    "related_docs": [
+      "REF-006"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 13991
+  },
+  {
+    "faq_id": "FAQ-059",
+    "category": "교환",
+    "question": "교환 배송비는 얼마인가요?",
+    "answer": "단순변심 교환은 왕복 배송비 6,000원이 고객 부담이며, 하자로 인한 교환은 무료입니다.",
+    "related_docs": [
+      "REF-006",
+      "REF-005"
+    ],
+    "status": "published",
+    "updated_at": "2026-03-02",
+    "view_count": 1105
+  },
+  {
+    "faq_id": "FAQ-060",
+    "category": "교환",
+    "question": "다른 상품으로 교환할 수 있나요?",
+    "answer": "다른 상품으로의 교환은 불가하며, 반품 후 재주문해 주세요.",
+    "related_docs": [
+      "REF-006"
+    ],
+    "status": "published",
+    "updated_at": "2026-10-05",
+    "view_count": 17166
+  },
+  {
+    "faq_id": "FAQ-061",
+    "category": "교환",
+    "question": "교환을 두 번 할 수 있나요?",
+    "answer": "교환은 주문당 1회로 제한됩니다.",
+    "related_docs": [
+      "REF-006"
+    ],
+    "status": "published",
+    "updated_at": "2026-10-05",
+    "view_count": 5330
+  },
+  {
+    "faq_id": "FAQ-062",
+    "category": "교환",
+    "question": "교환하려는 사이즈가 품절이에요.",
+    "answer": "교환 옵션이 품절인 경우 반품·환불로 처리됩니다.",
+    "related_docs": [
+      "REF-006"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 12068
+  },
+  {
+    "faq_id": "FAQ-063",
+    "category": "교환",
+    "question": "가격이 다른 옵션으로 교환되나요?",
+    "answer": "가격이 다른 옵션으로의 교환은 불가합니다.",
+    "related_docs": [
+      "REF-006"
+    ],
+    "status": "published",
+    "updated_at": "2026-03-02",
+    "view_count": 12043
+  },
+  {
+    "faq_id": "FAQ-064",
+    "category": "쿠폰/적립금",
+    "question": "쿠폰을 여러 장 같이 쓸 수 있나요?",
+    "answer": "상품 할인 쿠폰은 주문당 1장만 사용 가능하며, 무료배송 쿠폰은 상품 쿠폰과 중복 사용할 수 있습니다.",
+    "related_docs": [
+      "CPN-001"
+    ],
+    "status": "published",
+    "updated_at": "2026-04-01",
+    "view_count": 7543
+  },
+  {
+    "faq_id": "FAQ-065",
+    "category": "쿠폰/적립금",
+    "question": "쿠폰 기간이 지났는데 다시 받을 수 있나요?",
+    "answer": "유효기간이 지난 쿠폰은 자동 소멸되며 재발급되지 않습니다.",
+    "related_docs": [
+      "CPN-001"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 16169
+  },
+  {
+    "faq_id": "FAQ-066",
+    "category": "쿠폰/적립금",
+    "question": "신규 가입 쿠폰은 뭐가 있나요?",
+    "answer": "가입 즉시 30,000원 이상 구매 시 사용 가능한 5,000원 할인 쿠폰이 발급되며 유효기간은 14일입니다.",
+    "related_docs": [
+      "CPN-002"
+    ],
+    "status": "published",
+    "updated_at": "2026-03-02",
+    "view_count": 15370
+  },
+  {
+    "faq_id": "FAQ-067",
+    "category": "쿠폰/적립금",
+    "question": "생일 쿠폰은 언제 받나요?",
+    "answer": "생일이 속한 달 1일에 10% 할인 쿠폰(최대 10,000원, 20,000원 이상 구매 시)이 발급되며 해당 월 말일까지 사용 가능합니다.",
+    "related_docs": [
+      "CPN-003"
+    ],
+    "status": "published",
+    "updated_at": "2026-04-01",
+    "view_count": 1584
+  },
+  {
+    "faq_id": "FAQ-068",
+    "category": "쿠폰/적립금",
+    "question": "Final Sale 상품에 쿠폰을 쓸 수 있나요?",
+    "answer": "Final Sale 상품에는 쿠폰을 적용할 수 없습니다.",
+    "related_docs": [
+      "CPN-001"
+    ],
+    "status": "published",
+    "updated_at": "2026-10-05",
+    "view_count": 1519
+  },
+  {
+    "faq_id": "FAQ-069",
+    "category": "쿠폰/적립금",
+    "question": "적립금은 어떻게 사용하나요?",
+    "answer": "1,000포인트 이상 보유 시 100포인트 단위로 사용할 수 있으며, 1포인트는 1원입니다.",
+    "related_docs": [
+      "TOS-004"
+    ],
+    "status": "published",
+    "updated_at": "2026-03-02",
+    "view_count": 2429
+  },
+  {
+    "faq_id": "FAQ-070",
+    "category": "쿠폰/적립금",
+    "question": "적립금 유효기간이 있나요?",
+    "answer": "적립금은 적립일로부터 1년간 유효합니다.",
+    "related_docs": [
+      "TOS-004"
+    ],
+    "status": "published",
+    "updated_at": "2026-08-12",
+    "view_count": 2849
+  },
+  {
+    "faq_id": "FAQ-071",
+    "category": "쿠폰/적립금",
+    "question": "적립금은 얼마나 쌓이나요?",
+    "answer": "구매확정 시 실결제금액의 1%가 기본 적립되며, 등급별로 0.5~2%가 추가 적립됩니다.",
+    "related_docs": [
+      "TOS-004",
+      "TOS-005"
+    ],
+    "status": "published",
+    "updated_at": "2026-04-01",
+    "view_count": 13696
+  },
+  {
+    "faq_id": "FAQ-072",
+    "category": "쿠폰/적립금",
+    "question": "적립금을 현금으로 받을 수 있나요?",
+    "answer": "적립금은 현금으로 환급되지 않습니다.",
+    "related_docs": [
+      "TOS-004"
+    ],
+    "status": "published",
+    "updated_at": "2026-08-12",
+    "view_count": 11381
+  },
+  {
+    "faq_id": "FAQ-073",
+    "category": "회원등급",
+    "question": "회원 등급 기준이 어떻게 되나요?",
+    "answer": "최근 6개월 구매확정 금액 기준으로 실버 20만원, 골드 50만원, VIP 100만원 이상입니다.",
+    "related_docs": [
+      "TOS-005"
+    ],
+    "status": "published",
+    "updated_at": "2026-08-12",
+    "view_count": 11893
+  },
+  {
+    "faq_id": "FAQ-074",
+    "category": "회원등급",
+    "question": "등급은 언제 바뀌나요?",
+    "answer": "등급은 매월 1일 갱신됩니다.",
+    "related_docs": [
+      "TOS-005"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 845
+  },
+  {
+    "faq_id": "FAQ-075",
+    "category": "회원등급",
+    "question": "골드 등급 혜택이 뭔가요?",
+    "answer": "골드 등급은 매월 10% 할인쿠폰 1장, 무료배송 쿠폰 2장이 지급되며 구매 시 1%가 추가 적립됩니다.",
+    "related_docs": [
+      "TOS-005"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 104
+  },
+  {
+    "faq_id": "FAQ-076",
+    "category": "회원등급",
+    "question": "VIP는 반품비가 면제되나요?",
+    "answer": "현재 등급별 반품 배송비 면제 혜택은 없습니다. VIP 혜택은 15% 할인쿠폰 1장, 무료배송 쿠폰 4장, 추가 적립 2%입니다.",
+    "related_docs": [
+      "TOS-005",
+      "REF-001"
+    ],
+    "status": "published",
+    "updated_at": "2026-04-01",
+    "view_count": 17159
+  },
+  {
+    "faq_id": "FAQ-077",
+    "category": "회원등급",
+    "question": "등급 쿠폰은 언제까지 쓸 수 있나요?",
+    "answer": "매월 1일 발급되며 해당 월 말일까지 사용 가능합니다.",
+    "related_docs": [
+      "TOS-005"
+    ],
+    "status": "published",
+    "updated_at": "2026-04-01",
+    "view_count": 6328
+  },
+  {
+    "faq_id": "FAQ-078",
+    "category": "쿠폰/적립금",
+    "question": "쿠폰 코드는 어디에 입력하나요?",
+    "answer": "마이페이지 > 쿠폰 > 쿠폰 코드 등록에서 입력할 수 있습니다.",
+    "related_docs": [],
+    "status": "published",
+    "updated_at": "2026-08-12",
+    "view_count": 5632
+  },
+  {
+    "faq_id": "FAQ-079",
+    "category": "쿠폰/적립금",
+    "question": "쿠폰을 친구에게 줄 수 있나요?",
+    "answer": "쿠폰은 양도·판매할 수 없습니다.",
+    "related_docs": [
+      "CPN-001"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 17933
+  },
+  {
+    "faq_id": "FAQ-080",
+    "category": "회원/계정",
+    "question": "탈퇴하면 적립금은 어떻게 되나요?",
+    "answer": "탈퇴 시 보유 적립금과 쿠폰은 소멸되며 복구되지 않습니다.",
+    "related_docs": [
+      "TOS-001"
+    ],
+    "status": "published",
+    "updated_at": "2026-08-12",
+    "view_count": 1481
+  },
+  {
+    "faq_id": "FAQ-081",
+    "category": "회원/계정",
+    "question": "몇 살부터 가입할 수 있나요?",
+    "answer": "만 14세 이상 본인 인증 후 가입할 수 있습니다.",
+    "related_docs": [
+      "TOS-001"
+    ],
+    "status": "published",
+    "updated_at": "2026-10-05",
+    "view_count": 10468
+  },
+  {
+    "faq_id": "FAQ-082",
+    "category": "회원/계정",
+    "question": "비밀번호를 바꾸고 싶어요.",
+    "answer": "마이페이지 > 회원정보 수정에서 본인 인증 후 변경할 수 있습니다.",
+    "related_docs": [
+      "TOS-002"
+    ],
+    "status": "published",
+    "updated_at": "2026-03-02",
+    "view_count": 14463
+  },
+  {
+    "faq_id": "FAQ-083",
+    "category": "회원/계정",
+    "question": "상담으로 연락처나 주소를 바꿔줄 수 있나요?",
+    "answer": "개인정보 변경은 본인 인증 후 마이페이지에서만 가능하며, 상담 채널에서 대리 변경하지 않습니다.",
+    "related_docs": [
+      "TOS-002"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 13874
+  },
+  {
+    "faq_id": "FAQ-084",
+    "category": "회원/계정",
+    "question": "가족 주문도 대신 조회할 수 있나요?",
+    "answer": "본인 주문만 조회 가능합니다. 가족·지인의 주문 정보는 본인 인증 없이 제공하지 않습니다.",
+    "related_docs": [
+      "TOS-002",
+      "MAN-003"
+    ],
+    "status": "published",
+    "updated_at": "2026-08-12",
+    "view_count": 17649
+  },
+  {
+    "faq_id": "FAQ-085",
+    "category": "회원/계정",
+    "question": "선물 받은 상품 배송 조회가 되나요?",
+    "answer": "선물 수령인에게는 배송 상태만 제공되며 결제 정보는 제공되지 않습니다.",
+    "related_docs": [
+      "TOS-002"
+    ],
+    "status": "published",
+    "updated_at": "2026-03-02",
+    "view_count": 9511
+  },
+  {
+    "faq_id": "FAQ-086",
+    "category": "회원/계정",
+    "question": "누가 제 계정으로 주문한 것 같아요.",
+    "answer": "즉시 비밀번호를 변경하시고 고객센터로 연락해 주세요. 계정 도용 의심 건은 상담원이 24시간 긴급 대응합니다.",
+    "related_docs": [
+      "MAN-005",
+      "MAN-002"
+    ],
+    "status": "published",
+    "updated_at": "2026-03-02",
+    "view_count": 17016
+  },
+  {
+    "faq_id": "FAQ-087",
+    "category": "회원/계정",
+    "question": "회원 탈퇴는 어떻게 하나요?",
+    "answer": "마이페이지 > 회원탈퇴에서 가능하며, 진행 중인 주문·반품이 있으면 완료 후 탈퇴됩니다.",
+    "related_docs": [
+      "TOS-001"
+    ],
+    "status": "published",
+    "updated_at": "2026-10-05",
+    "view_count": 11641
+  },
+  {
+    "faq_id": "FAQ-088",
+    "category": "결제",
+    "question": "어떤 결제수단을 쓸 수 있나요?",
+    "answer": "신용/체크카드, 계좌이체, 무통장입금, 휴대폰 결제, A페이, 카카오페이, 네이버페이, 적립금을 이용할 수 있습니다.",
+    "related_docs": [
+      "TOS-003"
+    ],
+    "status": "published",
+    "updated_at": "2026-10-05",
+    "view_count": 1147
+  },
+  {
+    "faq_id": "FAQ-089",
+    "category": "회원/계정",
+    "question": "상담할 때 제 개인정보가 다 보이나요?",
+    "answer": "상담 시 연락처는 일부(010-****-1234 형식), 주소는 시·구까지만 마스킹하여 안내합니다.",
+    "related_docs": [
+      "TOS-002",
+      "MAN-003"
+    ],
+    "status": "published",
+    "updated_at": "2026-03-02",
+    "view_count": 1333
+  },
+  {
+    "faq_id": "FAQ-090",
+    "category": "결제",
+    "question": "휴대폰 결제 취소는 어떻게 환불되나요?",
+    "answer": "결제 당월 취소 시 즉시 취소되며, 익월 이후에는 계좌로 1~2 영업일 내 환불됩니다.",
+    "related_docs": [
+      "REF-004"
+    ],
+    "status": "published",
+    "updated_at": "2026-08-12",
+    "view_count": 12824
+  },
+  {
+    "faq_id": "FAQ-091",
+    "category": "상담",
+    "question": "상담원 연결은 언제 가능한가요?",
+    "answer": "평일 09:00~18:00 (점심 12:00~13:00 제외) 상담원 연결이 가능합니다.",
+    "related_docs": [
+      "MAN-002"
+    ],
+    "status": "published",
+    "updated_at": "2026-07-01",
+    "view_count": 15964
+  },
+  {
+    "faq_id": "FAQ-092",
+    "category": "상담",
+    "question": "주말에도 상담원과 이야기할 수 있나요?",
+    "answer": "주말·공휴일에는 상담 예약(콜백)을 접수하며 다음 영업일 오전 중 연락드립니다. 안전사고·계정 도용 등 긴급 건은 24시간 대응합니다.",
+    "related_docs": [
+      "MAN-002"
+    ],
+    "status": "published",
+    "updated_at": "2026-03-02",
+    "view_count": 17556
+  },
+  {
+    "faq_id": "FAQ-093",
+    "category": "상담",
+    "question": "고객센터 전화번호가 뭔가요?",
+    "answer": "고객센터 전화번호는 1588-0000입니다.",
+    "related_docs": [
+      "MAN-002"
+    ],
+    "status": "published",
+    "updated_at": "2026-08-12",
+    "view_count": 2834
+  },
+  {
+    "faq_id": "FAQ-094",
+    "category": "상담",
+    "question": "챗봇이 안내한 내용과 정책이 달라요.",
+    "answer": "자동 상담의 안내가 약관·정책과 다른 경우 약관·정책이 우선 적용됩니다. 불편을 드려 죄송합니다.",
+    "related_docs": [
+      "TOS-008"
+    ],
+    "status": "published",
+    "updated_at": "2026-10-05",
+    "view_count": 8243
+  },
+  {
+    "faq_id": "FAQ-095",
+    "category": "상담",
+    "question": "불만을 접수하면 언제 답변 받나요?",
+    "answer": "접수 후 3 영업일 이내 처리 결과 또는 일정을 안내드립니다.",
+    "related_docs": [
+      "TOS-009"
+    ],
+    "status": "published",
+    "updated_at": "2026-10-05",
+    "view_count": 13783
+  },
+  {
+    "faq_id": "FAQ-096",
+    "category": "상담",
+    "question": "분쟁이 해결되지 않으면 어디에 문의하나요?",
+    "answer": "한국소비자원, 전자거래분쟁조정위원회 등에 조정을 신청할 수 있습니다.",
+    "related_docs": [
+      "TOS-009"
+    ],
+    "status": "published",
+    "updated_at": "2026-08-12",
+    "view_count": 1821
+  },
+  {
+    "faq_id": "FAQ-097",
+    "category": "배송",
+    "question": "무료배송은 얼마 이상 사면 되나요?",
+    "answer": "50,000원 이상 구매 시 무료배송입니다. 실버 등급 이상은 금액과 관계없이 무료배송됩니다.",
+    "related_docs": [
+      "SHIP-002"
+    ],
+    "status": "outdated",
+    "updated_at": "2024-12-20",
+    "view_count": 14615,
+    "note": "정책 개정으로 내용 만료. 비노출 처리 누락(인덱스에 잔존)."
+  },
+  {
+    "faq_id": "FAQ-098",
+    "category": "반품/환불",
+    "question": "단순변심 반품 기간은요?",
+    "answer": "수령 후 14일 이내 반품 가능하며 반품 배송비는 5,000원입니다.",
+    "related_docs": [
+      "REF-002"
+    ],
+    "status": "outdated",
+    "updated_at": "2024-06-01",
+    "view_count": 20999,
+    "note": "정책 개정으로 내용 만료. 비노출 처리 누락(인덱스에 잔존)."
+  },
+  {
+    "faq_id": "FAQ-099",
+    "category": "배송",
+    "question": "배송이 하루 늦었는데 보상 받을 수 있나요?",
+    "answer": "도착 예정일보다 1일 이상 지연 시 고객센터로 신청하시면 5,000원 할인 쿠폰을 드립니다.",
+    "related_docs": [
+      "CPN-008"
+    ],
+    "status": "outdated",
+    "updated_at": "2024-01-05",
+    "view_count": 14593,
+    "note": "정책 개정으로 내용 만료. 비노출 처리 누락(인덱스에 잔존)."
+  },
+  {
+    "faq_id": "FAQ-100",
+    "category": "회원등급",
+    "question": "골드 등급은 반품비가 무료인가요?",
+    "answer": "네, 골드 등급 이상은 단순변심 반품 배송비가 면제됩니다.",
+    "related_docs": [
+      "TOS-006",
+      "REF-002"
+    ],
+    "status": "outdated",
+    "updated_at": "2025-01-02",
+    "view_count": 16757,
+    "note": "정책 개정으로 내용 만료. 비노출 처리 누락(인덱스에 잔존)."
+  }
+]

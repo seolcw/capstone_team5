@@ -1,0 +1,2241 @@
+[
+  {
+    "product_id": "P001",
+    "product_name": "오버핏 코튼 티셔츠",
+    "category": "의류",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "택(Tag) 제거",
+      "세탁 또는 착용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-007"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P002",
+    "product_name": "울 블렌드 라운드 니트",
+    "category": "의류",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 30,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 0,
+    "exchange_shipping_fee": 0,
+    "conditions": [],
+    "non_returnable_cases": [
+      "택(Tag) 제거",
+      "세탁 또는 착용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-007",
+      "REF-018"
+    ],
+    "special_note": "2026 F/W 프로모션: 수령 후 30일 이내 단순변심 무료 반품·교환 (상품별 조건 우선, REF-018)",
+    "updated_at": "2026-10-01"
+  },
+  {
+    "product_id": "P003",
+    "product_name": "와이드 데님 팬츠",
+    "category": "의류",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "택(Tag) 제거",
+      "세탁 또는 착용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-007"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P004",
+    "product_name": "경량 패딩 점퍼",
+    "category": "의류",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "택(Tag) 제거",
+      "세탁 또는 착용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-007"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P005",
+    "product_name": "롱 울 코트",
+    "category": "의류",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "택(Tag) 제거",
+      "세탁 또는 착용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-007"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P006",
+    "product_name": "헤비 후드 스웨트셔츠",
+    "category": "의류",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "택(Tag) 제거",
+      "세탁 또는 착용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-007"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P007",
+    "product_name": "슬림핏 옥스퍼드 셔츠",
+    "category": "의류",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "택(Tag) 제거",
+      "세탁 또는 착용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-007"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P008",
+    "product_name": "플리스 집업 재킷",
+    "category": "의류",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "택(Tag) 제거",
+      "세탁 또는 착용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-007"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P009",
+    "product_name": "니트 가디건",
+    "category": "의류",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "택(Tag) 제거",
+      "세탁 또는 착용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-007"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P010",
+    "product_name": "기모 조거 팬츠",
+    "category": "의류",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "택(Tag) 제거",
+      "세탁 또는 착용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-007"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P011",
+    "product_name": "플리츠 미디 스커트",
+    "category": "의류",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "택(Tag) 제거",
+      "세탁 또는 착용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-007"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P012",
+    "product_name": "캐시미어 머플러",
+    "category": "의류",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "택(Tag) 제거",
+      "세탁 또는 착용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-007"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P013",
+    "product_name": "레더 크로스백",
+    "category": "의류",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "택(Tag) 제거",
+      "세탁 또는 착용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-007"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P014",
+    "product_name": "코튼 볼캡",
+    "category": "의류",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "택(Tag) 제거",
+      "세탁 또는 착용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-007"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P015",
+    "product_name": "[Final Sale] 시즌오프 트렌치코트",
+    "category": "의류",
+    "simple_change_returnable": false,
+    "simple_change_window_days": 0,
+    "defect_window_days": 30,
+    "exchange_allowed": false,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "택(Tag) 제거",
+      "세탁 또는 착용 흔적",
+      "Final Sale 상품 단순변심 반품·교환"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-007",
+      "REF-016"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P016",
+    "product_name": "에어라이트 러닝화",
+    "category": "신발",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 30,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 0,
+    "exchange_shipping_fee": 0,
+    "conditions": [],
+    "non_returnable_cases": [
+      "실외 착용 흔적",
+      "신발 박스 훼손·분실"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-008",
+      "REF-018"
+    ],
+    "special_note": "2026 F/W 프로모션: 수령 후 30일 이내 단순변심 무료 반품·교환 (상품별 조건 우선, REF-018)",
+    "updated_at": "2026-10-01"
+  },
+  {
+    "product_id": "P017",
+    "product_name": "캔버스 로우 스니커즈",
+    "category": "신발",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "실외 착용 흔적",
+      "신발 박스 훼손·분실"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-008"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P018",
+    "product_name": "첼시 부츠",
+    "category": "신발",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "실외 착용 흔적",
+      "신발 박스 훼손·분실"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-008"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P019",
+    "product_name": "니트 슬립온",
+    "category": "신발",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "실외 착용 흔적",
+      "신발 박스 훼손·분실"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-008"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P020",
+    "product_name": "고어텍스 트레킹화",
+    "category": "신발",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "실외 착용 흔적",
+      "신발 박스 훼손·분실"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-008"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P021",
+    "product_name": "실내 슬리퍼",
+    "category": "신발",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "실외 착용 흔적",
+      "신발 박스 훼손·분실"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-008"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P022",
+    "product_name": "키즈 벨크로 운동화",
+    "category": "신발",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "실외 착용 흔적",
+      "신발 박스 훼손·분실"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-008"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P023",
+    "product_name": "[Final Sale] 아웃렛 페니 로퍼",
+    "category": "신발",
+    "simple_change_returnable": false,
+    "simple_change_window_days": 0,
+    "defect_window_days": 30,
+    "exchange_allowed": false,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "실외 착용 흔적",
+      "신발 박스 훼손·분실",
+      "Final Sale 상품 단순변심 반품·교환"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-008",
+      "REF-016"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P024",
+    "product_name": "히알루론 수분 크림 50ml",
+    "category": "뷰티",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "피부 트러블 시 30일 이내 피부과 소견서 제출하면 반품 가능(상담원 확인)"
+    ],
+    "non_returnable_cases": [
+      "포장(실링) 개봉 또는 사용"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-009"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P025",
+    "product_name": "비타민C 브라이트닝 세럼",
+    "category": "뷰티",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "피부 트러블 시 30일 이내 피부과 소견서 제출하면 반품 가능(상담원 확인)"
+    ],
+    "non_returnable_cases": [
+      "포장(실링) 개봉 또는 사용"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-009"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P026",
+    "product_name": "데일리 선크림 SPF50+",
+    "category": "뷰티",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "피부 트러블 시 30일 이내 피부과 소견서 제출하면 반품 가능(상담원 확인)"
+    ],
+    "non_returnable_cases": [
+      "포장(실링) 개봉 또는 사용"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-009"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P027",
+    "product_name": "약산성 클렌징폼",
+    "category": "뷰티",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "피부 트러블 시 30일 이내 피부과 소견서 제출하면 반품 가능(상담원 확인)"
+    ],
+    "non_returnable_cases": [
+      "포장(실링) 개봉 또는 사용"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-009"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P028",
+    "product_name": "매트 립스틱 3종 세트",
+    "category": "뷰티",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "피부 트러블 시 30일 이내 피부과 소견서 제출하면 반품 가능(상담원 확인)"
+    ],
+    "non_returnable_cases": [
+      "포장(실링) 개봉 또는 사용"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-009"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P029",
+    "product_name": "탈모케어 샴푸 500ml",
+    "category": "뷰티",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "피부 트러블 시 30일 이내 피부과 소견서 제출하면 반품 가능(상담원 확인)"
+    ],
+    "non_returnable_cases": [
+      "포장(실링) 개봉 또는 사용"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-009"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P030",
+    "product_name": "오 드 퍼퓸 50ml",
+    "category": "뷰티",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "피부 트러블 시 30일 이내 피부과 소견서 제출하면 반품 가능(상담원 확인)"
+    ],
+    "non_returnable_cases": [
+      "포장(실링) 개봉 또는 사용"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-009"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P031",
+    "product_name": "커버 쿠션 팩트",
+    "category": "뷰티",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "피부 트러블 시 30일 이내 피부과 소견서 제출하면 반품 가능(상담원 확인)"
+    ],
+    "non_returnable_cases": [
+      "포장(실링) 개봉 또는 사용"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-009"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P032",
+    "product_name": "진정 시트마스크 10매",
+    "category": "뷰티",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "피부 트러블 시 30일 이내 피부과 소견서 제출하면 반품 가능(상담원 확인)"
+    ],
+    "non_returnable_cases": [
+      "포장(실링) 개봉 또는 사용"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-009"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P033",
+    "product_name": "시어버터 바디로션",
+    "category": "뷰티",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "피부 트러블 시 30일 이내 피부과 소견서 제출하면 반품 가능(상담원 확인)"
+    ],
+    "non_returnable_cases": [
+      "포장(실링) 개봉 또는 사용"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-009"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P034",
+    "product_name": "유기농 그래놀라 500g",
+    "category": "식품",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "개봉"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-010"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P035",
+    "product_name": "콜드브루 원액 1L",
+    "category": "식품",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "개봉"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-010"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P036",
+    "product_name": "고기 왕만두 1kg",
+    "category": "식품",
+    "simple_change_returnable": false,
+    "simple_change_window_days": 0,
+    "defect_window_days": 30,
+    "exchange_allowed": false,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "냉동식품 단순변심"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-010"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P037",
+    "product_name": "화덕 냉동 피자 2판",
+    "category": "식품",
+    "simple_change_returnable": false,
+    "simple_change_window_days": 0,
+    "defect_window_days": 30,
+    "exchange_allowed": false,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "냉동식품 단순변심"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-010"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P038",
+    "product_name": "하루견과 30봉",
+    "category": "식품",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "개봉"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-010"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P039",
+    "product_name": "단백질 쉐이크 초코 1kg",
+    "category": "식품",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "개봉"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-010"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P040",
+    "product_name": "즉석밥 210g x 24개",
+    "category": "식품",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "개봉"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-010"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P041",
+    "product_name": "[임박특가] 버터쿠키 선물세트",
+    "category": "식품",
+    "simple_change_returnable": false,
+    "simple_change_window_days": 0,
+    "defect_window_days": 30,
+    "exchange_allowed": false,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "유통기한 임박 할인상품 단순변심"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-010"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P042",
+    "product_name": "한우 1++ 등심 500g",
+    "category": "신선식품",
+    "simple_change_returnable": false,
+    "simple_change_window_days": 0,
+    "defect_window_days": 1,
+    "exchange_allowed": false,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "품질 이상은 수령 후 24시간 이내 사진 첨부 접수"
+    ],
+    "non_returnable_cases": [
+      "단순변심 전체"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-010"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P043",
+    "product_name": "제주 노지감귤 5kg",
+    "category": "신선식품",
+    "simple_change_returnable": false,
+    "simple_change_window_days": 0,
+    "defect_window_days": 1,
+    "exchange_allowed": false,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "품질 이상은 수령 후 24시간 이내 사진 첨부 접수"
+    ],
+    "non_returnable_cases": [
+      "단순변심 전체"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-010"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P044",
+    "product_name": "노르웨이 생연어 400g",
+    "category": "신선식품",
+    "simple_change_returnable": false,
+    "simple_change_window_days": 0,
+    "defect_window_days": 1,
+    "exchange_allowed": false,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "품질 이상은 수령 후 24시간 이내 사진 첨부 접수"
+    ],
+    "non_returnable_cases": [
+      "단순변심 전체"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-010"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P045",
+    "product_name": "유기농 우유 2.3L",
+    "category": "신선식품",
+    "simple_change_returnable": false,
+    "simple_change_window_days": 0,
+    "defect_window_days": 1,
+    "exchange_allowed": false,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "품질 이상은 수령 후 24시간 이내 사진 첨부 접수"
+    ],
+    "non_returnable_cases": [
+      "단순변심 전체"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-010"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P046",
+    "product_name": "친환경 무항생제 계란 30구",
+    "category": "신선식품",
+    "simple_change_returnable": false,
+    "simple_change_window_days": 0,
+    "defect_window_days": 1,
+    "exchange_allowed": false,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "품질 이상은 수령 후 24시간 이내 사진 첨부 접수"
+    ],
+    "non_returnable_cases": [
+      "단순변심 전체"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-010"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P047",
+    "product_name": "샤인머스캣 2kg",
+    "category": "신선식품",
+    "simple_change_returnable": false,
+    "simple_change_window_days": 0,
+    "defect_window_days": 1,
+    "exchange_allowed": false,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "품질 이상은 수령 후 24시간 이내 사진 첨부 접수"
+    ],
+    "non_returnable_cases": [
+      "단순변심 전체"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-010"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P048",
+    "product_name": "모둠 쌈채소 1kg",
+    "category": "신선식품",
+    "simple_change_returnable": false,
+    "simple_change_window_days": 0,
+    "defect_window_days": 1,
+    "exchange_allowed": false,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "품질 이상은 수령 후 24시간 이내 사진 첨부 접수"
+    ],
+    "non_returnable_cases": [
+      "단순변심 전체"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-010"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P049",
+    "product_name": "완도 활전복 1kg",
+    "category": "신선식품",
+    "simple_change_returnable": false,
+    "simple_change_window_days": 0,
+    "defect_window_days": 1,
+    "exchange_allowed": false,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "품질 이상은 수령 후 24시간 이내 사진 첨부 접수"
+    ],
+    "non_returnable_cases": [
+      "단순변심 전체"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-010"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P050",
+    "product_name": "노이즈캔슬링 무선 헤드폰",
+    "category": "디지털",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "초기불량은 수령 후 7일 이내 동일 제품 교환, 이후는 제조사 A/S"
+    ],
+    "non_returnable_cases": [
+      "박스 실링 개봉",
+      "제품 등록·활성화"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-011"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P051",
+    "product_name": "무선 이어버드 프로",
+    "category": "디지털",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "초기불량은 수령 후 7일 이내 동일 제품 교환, 이후는 제조사 A/S"
+    ],
+    "non_returnable_cases": [
+      "박스 실링 개봉",
+      "제품 등록·활성화"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-011"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P052",
+    "product_name": "스마트워치 S3",
+    "category": "디지털",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "초기불량은 수령 후 7일 이내 동일 제품 교환, 이후는 제조사 A/S"
+    ],
+    "non_returnable_cases": [
+      "박스 실링 개봉",
+      "제품 등록·활성화"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-011"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P053",
+    "product_name": "11인치 태블릿 128GB",
+    "category": "디지털",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "초기불량은 수령 후 7일 이내 동일 제품 교환, 이후는 제조사 A/S"
+    ],
+    "non_returnable_cases": [
+      "박스 실링 개봉",
+      "제품 등록·활성화"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-011"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P054",
+    "product_name": "14인치 울트라 노트북",
+    "category": "디지털",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "초기불량은 수령 후 7일 이내 동일 제품 교환, 이후는 제조사 A/S"
+    ],
+    "non_returnable_cases": [
+      "박스 실링 개봉",
+      "제품 등록·활성화"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-011"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P055",
+    "product_name": "휴대용 블루투스 스피커",
+    "category": "디지털",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "초기불량은 수령 후 7일 이내 동일 제품 교환, 이후는 제조사 A/S"
+    ],
+    "non_returnable_cases": [
+      "박스 실링 개봉",
+      "제품 등록·활성화"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-011"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P056",
+    "product_name": "기계식 키보드 갈축",
+    "category": "디지털",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "초기불량은 수령 후 7일 이내 동일 제품 교환, 이후는 제조사 A/S"
+    ],
+    "non_returnable_cases": [
+      "박스 실링 개봉",
+      "제품 등록·활성화"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-011"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P057",
+    "product_name": "무선 버티컬 마우스",
+    "category": "디지털",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "초기불량은 수령 후 7일 이내 동일 제품 교환, 이후는 제조사 A/S"
+    ],
+    "non_returnable_cases": [
+      "박스 실링 개봉",
+      "제품 등록·활성화"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-011"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P058",
+    "product_name": "보조배터리 20000mAh",
+    "category": "디지털",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "초기불량은 수령 후 7일 이내 동일 제품 교환, 이후는 제조사 A/S"
+    ],
+    "non_returnable_cases": [
+      "박스 실링 개봉",
+      "제품 등록·활성화"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-011"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P059",
+    "product_name": "27인치 QHD 모니터",
+    "category": "디지털",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "초기불량은 수령 후 7일 이내 동일 제품 교환, 이후는 제조사 A/S"
+    ],
+    "non_returnable_cases": [
+      "박스 실링 개봉",
+      "제품 등록·활성화"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-011"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P060",
+    "product_name": "스마트폰 실리콘 케이스",
+    "category": "디지털",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "초기불량은 수령 후 7일 이내 동일 제품 교환, 이후는 제조사 A/S"
+    ],
+    "non_returnable_cases": [
+      "박스 실링 개봉",
+      "제품 등록·활성화"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-011"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P061",
+    "product_name": "[각인] 무선 이어버드 이니셜 에디션",
+    "category": "디지털",
+    "simple_change_returnable": false,
+    "simple_change_window_days": 0,
+    "defect_window_days": 30,
+    "exchange_allowed": false,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "초기불량은 수령 후 7일 이내 동일 제품 교환, 이후는 제조사 A/S"
+    ],
+    "non_returnable_cases": [
+      "박스 실링 개봉",
+      "제품 등록·활성화",
+      "주문제작 상품(제작 착수 후 취소·반품 불가)"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-011",
+      "REF-015"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P062",
+    "product_name": "65인치 4K 스마트 TV",
+    "category": "가전",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 30000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "초기불량은 수령 후 7일 이내 동일 제품 교환, 이후는 제조사 A/S",
+      "설치 전 취소 시 회수비 30,000원"
+    ],
+    "non_returnable_cases": [
+      "박스 실링 개봉",
+      "제품 등록·활성화",
+      "설치 완료 후 단순변심"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-011",
+      "SHIP-007"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P063",
+    "product_name": "양문형 냉장고 832L",
+    "category": "가전",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 30000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "초기불량은 수령 후 7일 이내 동일 제품 교환, 이후는 제조사 A/S",
+      "설치 전 취소 시 회수비 30,000원"
+    ],
+    "non_returnable_cases": [
+      "박스 실링 개봉",
+      "제품 등록·활성화",
+      "설치 완료 후 단순변심"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-011",
+      "SHIP-007"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P064",
+    "product_name": "드럼 세탁기 21kg",
+    "category": "가전",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 30000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "초기불량은 수령 후 7일 이내 동일 제품 교환, 이후는 제조사 A/S",
+      "설치 전 취소 시 회수비 30,000원"
+    ],
+    "non_returnable_cases": [
+      "박스 실링 개봉",
+      "제품 등록·활성화",
+      "설치 완료 후 단순변심"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-011",
+      "SHIP-007"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P065",
+    "product_name": "로봇청소기 X9",
+    "category": "가전",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "초기불량은 수령 후 7일 이내 동일 제품 교환, 이후는 제조사 A/S"
+    ],
+    "non_returnable_cases": [
+      "박스 실링 개봉",
+      "제품 등록·활성화"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-011"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P066",
+    "product_name": "공기청정기 40평형",
+    "category": "가전",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "초기불량은 수령 후 7일 이내 동일 제품 교환, 이후는 제조사 A/S"
+    ],
+    "non_returnable_cases": [
+      "박스 실링 개봉",
+      "제품 등록·활성화"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-011"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P067",
+    "product_name": "에어프라이어 5.5L",
+    "category": "가전",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "초기불량은 수령 후 7일 이내 동일 제품 교환, 이후는 제조사 A/S"
+    ],
+    "non_returnable_cases": [
+      "박스 실링 개봉",
+      "제품 등록·활성화"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-011"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P068",
+    "product_name": "탄소매트 전기장판 더블",
+    "category": "가전",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "초기불량은 수령 후 7일 이내 동일 제품 교환, 이후는 제조사 A/S"
+    ],
+    "non_returnable_cases": [
+      "박스 실링 개봉",
+      "제품 등록·활성화"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-011"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P069",
+    "product_name": "고속 헤어드라이어",
+    "category": "가전",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "초기불량은 수령 후 7일 이내 동일 제품 교환, 이후는 제조사 A/S"
+    ],
+    "non_returnable_cases": [
+      "박스 실링 개봉",
+      "제품 등록·활성화"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-011"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P070",
+    "product_name": "무선 청소기 파워",
+    "category": "가전",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "초기불량은 수령 후 7일 이내 동일 제품 교환, 이후는 제조사 A/S"
+    ],
+    "non_returnable_cases": [
+      "박스 실링 개봉",
+      "제품 등록·활성화"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-011"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P071",
+    "product_name": "전자동 커피머신",
+    "category": "가전",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "초기불량은 수령 후 7일 이내 동일 제품 교환, 이후는 제조사 A/S"
+    ],
+    "non_returnable_cases": [
+      "박스 실링 개봉",
+      "제품 등록·활성화"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-011"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P072",
+    "product_name": "원목 4인 식탁",
+    "category": "가구",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 50000,
+    "exchange_shipping_fee": 50000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "조립·설치 완료 후 단순변심"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-012"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P073",
+    "product_name": "3인 패브릭 소파",
+    "category": "가구",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 80000,
+    "exchange_shipping_fee": 80000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "조립·설치 완료 후 단순변심"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-012"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P074",
+    "product_name": "전동 모션데스크",
+    "category": "가구",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 50000,
+    "exchange_shipping_fee": 50000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "조립·설치 완료 후 단순변심"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-012"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P075",
+    "product_name": "메쉬 사무용 의자",
+    "category": "가구",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 20000,
+    "exchange_shipping_fee": 20000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "조립·설치 완료 후 단순변심"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-012"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P076",
+    "product_name": "철제 5단 수납 선반",
+    "category": "가구",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 15000,
+    "exchange_shipping_fee": 15000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "조립·설치 완료 후 단순변심"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-012"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P077",
+    "product_name": "포켓스프링 매트리스 퀸",
+    "category": "가구",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 80000,
+    "exchange_shipping_fee": 80000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "조립·설치 완료 후 단순변심"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-012"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P078",
+    "product_name": "[주문제작] 원목 맞춤 책장",
+    "category": "가구",
+    "simple_change_returnable": false,
+    "simple_change_window_days": 0,
+    "defect_window_days": 30,
+    "exchange_allowed": false,
+    "return_shipping_fee": 50000,
+    "exchange_shipping_fee": 50000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "조립·설치 완료 후 단순변심",
+      "주문제작 상품(제작 착수 후 취소·반품 불가)"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-012",
+      "REF-015"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P079",
+    "product_name": "LED 무드 스탠드",
+    "category": "가구",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "조립·설치 완료 후 단순변심"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-012"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P080",
+    "product_name": "데이터 엔지니어링 입문",
+    "category": "도서",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": false,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "오염·훼손이 없는 경우에 한함"
+    ],
+    "non_returnable_cases": [],
+    "policy_refs": [
+      "REF-001",
+      "REF-013"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P081",
+    "product_name": "장편소설 겨울의 정원",
+    "category": "도서",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": false,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "오염·훼손이 없는 경우에 한함"
+    ],
+    "non_returnable_cases": [],
+    "policy_refs": [
+      "REF-001",
+      "REF-013"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P082",
+    "product_name": "어린이 과학 그림책 세트",
+    "category": "도서",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": false,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "오염·훼손이 없는 경우에 한함"
+    ],
+    "non_returnable_cases": [],
+    "policy_refs": [
+      "REF-001",
+      "REF-013"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P083",
+    "product_name": "수능 영단어 2000",
+    "category": "도서",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": false,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "오염·훼손이 없는 경우에 한함"
+    ],
+    "non_returnable_cases": [],
+    "policy_refs": [
+      "REF-001",
+      "REF-013"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P084",
+    "product_name": "집밥 레시피 100",
+    "category": "도서",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": false,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "오염·훼손이 없는 경우에 한함"
+    ],
+    "non_returnable_cases": [],
+    "policy_refs": [
+      "REF-001",
+      "REF-013"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P085",
+    "product_name": "재즈 명반 LP",
+    "category": "도서",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": false,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "오염·훼손이 없는 경우에 한함"
+    ],
+    "non_returnable_cases": [
+      "비닐 포장 개봉"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-013"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P086",
+    "product_name": "판타지 만화 전집 10권",
+    "category": "도서",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": false,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [
+      "오염·훼손이 없는 경우에 한함"
+    ],
+    "non_returnable_cases": [
+      "비닐 포장 개봉"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-013"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P087",
+    "product_name": "면 드로즈 3팩",
+    "category": "언더웨어",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "포장 개봉(위생상품)"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-014"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P088",
+    "product_name": "심리스 브라렛 세트",
+    "category": "언더웨어",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "포장 개봉(위생상품)"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-014"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P089",
+    "product_name": "래쉬가드 수영복 세트",
+    "category": "언더웨어",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "포장 개봉(위생상품)"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-014"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P090",
+    "product_name": "남성 사각 수영복",
+    "category": "언더웨어",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "포장 개봉(위생상품)"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-014"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P091",
+    "product_name": "기능성 쿠션 양말 5팩",
+    "category": "언더웨어",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "포장 개봉(위생상품)"
+    ],
+    "policy_refs": [
+      "REF-001",
+      "REF-014"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P092",
+    "product_name": "극세사 차렵이불 퀸",
+    "category": "생활용품",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "사용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P093",
+    "product_name": "호텔 타월 10장",
+    "category": "생활용품",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "사용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P094",
+    "product_name": "스테인리스 텀블러 600ml",
+    "category": "생활용품",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "사용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P095",
+    "product_name": "독일식 주방 칼 5종",
+    "category": "생활용품",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "사용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P096",
+    "product_name": "라탄 수납 바구니 3종",
+    "category": "생활용품",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "사용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P097",
+    "product_name": "우디 디퓨저 200ml",
+    "category": "생활용품",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "사용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P098",
+    "product_name": "경량 캠핑 의자",
+    "category": "생활용품",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "사용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P099",
+    "product_name": "IH 프라이팬 3종",
+    "category": "생활용품",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "사용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  },
+  {
+    "product_id": "P100",
+    "product_name": "규조토 욕실 매트",
+    "category": "생활용품",
+    "simple_change_returnable": true,
+    "simple_change_window_days": 7,
+    "defect_window_days": 30,
+    "exchange_allowed": true,
+    "return_shipping_fee": 6000,
+    "exchange_shipping_fee": 6000,
+    "conditions": [],
+    "non_returnable_cases": [
+      "사용 흔적"
+    ],
+    "policy_refs": [
+      "REF-001"
+    ],
+    "special_note": null,
+    "updated_at": "2026-03-01"
+  }
+]

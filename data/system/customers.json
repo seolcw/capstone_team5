@@ -1,0 +1,1425 @@
+[
+  {
+    "customer_id": "C0001",
+    "name": "김민준",
+    "email": "user001@example.com",
+    "phone": "010-2211-4496",
+    "birth_date": "1991-11-14",
+    "grade": "골드",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 12000,
+      "expiring_soon": {
+        "amount": 2000,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2022-01-07",
+    "address": {
+      "zipcode": "46336",
+      "base": "서울특별시 관악구",
+      "detail": "은행나무로 249, 883호",
+      "region": "서울",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-23T21:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0002",
+    "name": "이서연",
+    "email": "user002@example.com",
+    "phone": "010-9563-2578",
+    "birth_date": "1996-05-04",
+    "grade": "실버",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 500,
+      "expiring_soon": null
+    },
+    "join_date": "2026-02-13",
+    "address": {
+      "zipcode": "23938",
+      "base": "경기도 성남시 분당구",
+      "detail": "중앙로 98, 126호",
+      "region": "경기",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-15T13:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0003",
+    "name": "강준서",
+    "email": "user003@example.com",
+    "phone": "010-9201-2052",
+    "birth_date": "2000-02-06",
+    "grade": "일반",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 1200,
+      "expiring_soon": {
+        "amount": 1200,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2023-05-23",
+    "address": {
+      "zipcode": "41640",
+      "base": "경기도 수원시 영통구",
+      "detail": "해오름길 212, 847호",
+      "region": "경기",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-21T07:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0004",
+    "name": "안지민",
+    "email": "user004@example.com",
+    "phone": "010-6670-1031",
+    "birth_date": "1999-12-26",
+    "grade": "일반",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 5000,
+      "expiring_soon": {
+        "amount": 1000,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2023-04-29",
+    "address": {
+      "zipcode": "48564",
+      "base": "경기도 성남시 분당구",
+      "detail": "은행나무로 99, 775호",
+      "region": "경기",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-16T07:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0005",
+    "name": "안건우",
+    "email": "user005@example.com",
+    "phone": "010-5396-7676",
+    "birth_date": "1988-02-26",
+    "grade": "일반",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 15800,
+      "expiring_soon": null
+    },
+    "join_date": "2023-01-03",
+    "address": {
+      "zipcode": "39539",
+      "base": "경기도 고양시 일산동구",
+      "detail": "은행나무로 75, 1091호",
+      "region": "경기",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-26T20:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0006",
+    "name": "조예준",
+    "email": "user006@example.com",
+    "phone": "010-7165-2921",
+    "birth_date": "1975-04-05",
+    "grade": "일반",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 0,
+      "expiring_soon": null
+    },
+    "join_date": "2023-04-01",
+    "address": {
+      "zipcode": "38950",
+      "base": "부산광역시 해운대구",
+      "detail": "은행나무로 27, 138호",
+      "region": "부산",
+      "region_type": "일반",
+      "early_delivery_available": false
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-16T07:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0007",
+    "name": "조지아",
+    "email": "user007@example.com",
+    "phone": "010-3209-9144",
+    "birth_date": "1985-06-20",
+    "grade": "일반",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 500,
+      "expiring_soon": null
+    },
+    "join_date": "2023-09-01",
+    "address": {
+      "zipcode": "34157",
+      "base": "서울특별시 강남구",
+      "detail": "은행나무로 184, 546호",
+      "region": "서울",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-22T16:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0008",
+    "name": "윤서윤",
+    "email": "user008@example.com",
+    "phone": "010-7192-2451",
+    "birth_date": "1994-08-21",
+    "grade": "골드",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 500,
+      "expiring_soon": null
+    },
+    "join_date": "2026-07-09",
+    "address": {
+      "zipcode": "59976",
+      "base": "서울특별시 마포구",
+      "detail": "행복로 92, 900호",
+      "region": "서울",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-13T14:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0009",
+    "name": "신도윤",
+    "email": "user009@example.com",
+    "phone": "010-6097-8419",
+    "birth_date": "2005-08-22",
+    "grade": "VIP",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 8200,
+      "expiring_soon": {
+        "amount": 2000,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2025-08-20",
+    "address": {
+      "zipcode": "40518",
+      "base": "서울특별시 송파구",
+      "detail": "중앙로 131, 1202호",
+      "region": "서울",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-25T01:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0010",
+    "name": "한지우",
+    "email": "user010@example.com",
+    "phone": "010-4996-4407",
+    "birth_date": "1995-10-07",
+    "grade": "실버",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 0,
+      "expiring_soon": null
+    },
+    "join_date": "2023-09-10",
+    "address": {
+      "zipcode": "26038",
+      "base": "서울특별시 관악구",
+      "detail": "해오름길 248, 575호",
+      "region": "서울",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-26T15:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0011",
+    "name": "이태윤",
+    "email": "user011@example.com",
+    "phone": "010-2925-7954",
+    "birth_date": "2002-04-20",
+    "grade": "VIP",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 500,
+      "expiring_soon": null
+    },
+    "join_date": "2022-03-03",
+    "address": {
+      "zipcode": "16062",
+      "base": "서울특별시 강남구",
+      "detail": "꽃길 237, 775호",
+      "region": "서울",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-11T19:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0012",
+    "name": "오하은",
+    "email": "user012@example.com",
+    "phone": "010-2638-2661",
+    "birth_date": "1969-09-02",
+    "grade": "일반",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 0,
+      "expiring_soon": null
+    },
+    "join_date": "2026-07-30",
+    "address": {
+      "zipcode": "24780",
+      "base": "제주특별자치도 서귀포시",
+      "detail": "중앙로 193, 365호",
+      "region": "제주",
+      "region_type": "제주",
+      "early_delivery_available": false
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-24T05:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0013",
+    "name": "이도윤",
+    "email": "user013@example.com",
+    "phone": "010-7288-5602",
+    "birth_date": "1990-10-19",
+    "grade": "일반",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 15800,
+      "expiring_soon": {
+        "amount": 2000,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2022-04-04",
+    "address": {
+      "zipcode": "60903",
+      "base": "부산광역시 해운대구",
+      "detail": "해오름길 103, 997호",
+      "region": "부산",
+      "region_type": "일반",
+      "early_delivery_available": false
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-23T12:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0014",
+    "name": "서현우",
+    "email": "user014@example.com",
+    "phone": "010-2427-6371",
+    "birth_date": "1999-02-27",
+    "grade": "실버",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 15800,
+      "expiring_soon": null
+    },
+    "join_date": "2025-11-26",
+    "address": {
+      "zipcode": "53409",
+      "base": "부산광역시 수영구",
+      "detail": "행복로 296, 472호",
+      "region": "부산",
+      "region_type": "일반",
+      "early_delivery_available": false
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-24T03:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0015",
+    "name": "강현우",
+    "email": "user015@example.com",
+    "phone": "010-6123-4398",
+    "birth_date": "1997-01-15",
+    "grade": "일반",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 12000,
+      "expiring_soon": {
+        "amount": 2000,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2025-12-31",
+    "address": {
+      "zipcode": "58056",
+      "base": "서울특별시 관악구",
+      "detail": "중앙로 205, 1039호",
+      "region": "서울",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-21T00:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0016",
+    "name": "한지호",
+    "email": "user016@example.com",
+    "phone": "010-2316-1547",
+    "birth_date": "1982-09-12",
+    "grade": "VIP",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 12000,
+      "expiring_soon": {
+        "amount": 2000,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2023-09-04",
+    "address": {
+      "zipcode": "56063",
+      "base": "서울특별시 강남구",
+      "detail": "꽃길 208, 217호",
+      "region": "서울",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-12T03:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0017",
+    "name": "류예준",
+    "email": "user017@example.com",
+    "phone": "010-3886-2638",
+    "birth_date": "1990-03-25",
+    "grade": "일반",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 8200,
+      "expiring_soon": null
+    },
+    "join_date": "2026-04-23",
+    "address": {
+      "zipcode": "24889",
+      "base": "경기도 고양시 일산동구",
+      "detail": "중앙로 128, 327호",
+      "region": "경기",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-15T13:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0018",
+    "name": "홍시우",
+    "email": "user018@example.com",
+    "phone": "010-9469-4345",
+    "birth_date": "1995-09-21",
+    "grade": "일반",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 23000,
+      "expiring_soon": {
+        "amount": 500,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2024-01-16",
+    "address": {
+      "zipcode": "49333",
+      "base": "부산광역시 해운대구",
+      "detail": "중앙로 276, 1167호",
+      "region": "부산",
+      "region_type": "일반",
+      "early_delivery_available": false
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-19T21:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0019",
+    "name": "서서윤",
+    "email": "user019@example.com",
+    "phone": "010-3174-7819",
+    "birth_date": "1991-10-28",
+    "grade": "실버",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 23000,
+      "expiring_soon": null
+    },
+    "join_date": "2023-11-22",
+    "address": {
+      "zipcode": "21809",
+      "base": "인천광역시 연수구",
+      "detail": "해오름길 112, 121호",
+      "region": "인천",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-15T07:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0020",
+    "name": "이시우",
+    "email": "user020@example.com",
+    "phone": "010-7383-6303",
+    "birth_date": "1983-10-24",
+    "grade": "실버",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 5000,
+      "expiring_soon": {
+        "amount": 2000,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2023-07-01",
+    "address": {
+      "zipcode": "21969",
+      "base": "대전광역시 유성구",
+      "detail": "중앙로 115, 281호",
+      "region": "대전",
+      "region_type": "일반",
+      "early_delivery_available": false
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-19T03:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0021",
+    "name": "권예준",
+    "email": "user021@example.com",
+    "phone": "010-7275-5873",
+    "birth_date": "1979-09-13",
+    "grade": "일반",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 0,
+      "expiring_soon": null
+    },
+    "join_date": "2025-03-04",
+    "address": {
+      "zipcode": "41286",
+      "base": "인천광역시 옹진군 백령면",
+      "detail": "행복로 112, 809호",
+      "region": "도서산간",
+      "region_type": "도서산간",
+      "early_delivery_available": false
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-17T06:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0022",
+    "name": "황수아",
+    "email": "user022@example.com",
+    "phone": "010-7611-6716",
+    "birth_date": "1981-02-17",
+    "grade": "실버",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 15800,
+      "expiring_soon": {
+        "amount": 1000,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2023-12-08",
+    "address": {
+      "zipcode": "50890",
+      "base": "서울특별시 성동구",
+      "detail": "행복로 131, 1132호",
+      "region": "서울",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-18T22:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0023",
+    "name": "류시우",
+    "email": "user023@example.com",
+    "phone": "010-9167-6115",
+    "birth_date": "1997-06-20",
+    "grade": "VIP",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 3500,
+      "expiring_soon": {
+        "amount": 500,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2026-08-26",
+    "address": {
+      "zipcode": "27364",
+      "base": "경기도 고양시 일산동구",
+      "detail": "은행나무로 275, 142호",
+      "region": "경기",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-13T11:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0024",
+    "name": "서하은",
+    "email": "user024@example.com",
+    "phone": "010-3463-5629",
+    "birth_date": "1997-06-15",
+    "grade": "일반",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 8200,
+      "expiring_soon": null
+    },
+    "join_date": "2024-05-25",
+    "address": {
+      "zipcode": "23821",
+      "base": "경기도 성남시 분당구",
+      "detail": "꽃길 78, 453호",
+      "region": "경기",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-18T06:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0025",
+    "name": "임지호",
+    "email": "user025@example.com",
+    "phone": "010-6565-5151",
+    "birth_date": "1980-12-04",
+    "grade": "일반",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 23000,
+      "expiring_soon": null
+    },
+    "join_date": "2022-11-30",
+    "address": {
+      "zipcode": "32394",
+      "base": "인천광역시 연수구",
+      "detail": "행복로 199, 533호",
+      "region": "인천",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-24T13:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0026",
+    "name": "서소율",
+    "email": "user026@example.com",
+    "phone": "010-6092-9517",
+    "birth_date": "1983-11-16",
+    "grade": "실버",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 5000,
+      "expiring_soon": {
+        "amount": 500,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2023-09-04",
+    "address": {
+      "zipcode": "57596",
+      "base": "경기도 용인시 수지구",
+      "detail": "꽃길 179, 880호",
+      "region": "경기",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-21T04:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0027",
+    "name": "정건우",
+    "email": "user027@example.com",
+    "phone": "010-4836-3412",
+    "birth_date": "1989-08-03",
+    "grade": "실버",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 15800,
+      "expiring_soon": {
+        "amount": 2000,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2024-01-04",
+    "address": {
+      "zipcode": "11462",
+      "base": "제주특별자치도 서귀포시",
+      "detail": "해오름길 173, 373호",
+      "region": "제주",
+      "region_type": "제주",
+      "early_delivery_available": false
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-22T06:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0028",
+    "name": "윤소율",
+    "email": "user028@example.com",
+    "phone": "010-9287-8476",
+    "birth_date": "1979-05-22",
+    "grade": "실버",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 500,
+      "expiring_soon": null
+    },
+    "join_date": "2022-04-28",
+    "address": {
+      "zipcode": "58324",
+      "base": "서울특별시 송파구",
+      "detail": "꽃길 150, 162호",
+      "region": "서울",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-20T01:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0029",
+    "name": "윤지호",
+    "email": "user029@example.com",
+    "phone": "010-9884-7765",
+    "birth_date": "2002-04-07",
+    "grade": "실버",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 3500,
+      "expiring_soon": {
+        "amount": 1000,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2024-08-21",
+    "address": {
+      "zipcode": "41315",
+      "base": "서울특별시 강남구",
+      "detail": "행복로 103, 102호",
+      "region": "서울",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-17T11:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0030",
+    "name": "정시우",
+    "email": "user030@example.com",
+    "phone": "010-4425-6210",
+    "birth_date": "1994-10-08",
+    "grade": "일반",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 23000,
+      "expiring_soon": null
+    },
+    "join_date": "2023-11-21",
+    "address": {
+      "zipcode": "33589",
+      "base": "광주광역시 서구",
+      "detail": "해오름길 54, 793호",
+      "region": "광주",
+      "region_type": "일반",
+      "early_delivery_available": false
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-27T00:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0031",
+    "name": "이건우",
+    "email": "user031@example.com",
+    "phone": "010-6214-6360",
+    "birth_date": "1967-07-02",
+    "grade": "실버",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 8200,
+      "expiring_soon": {
+        "amount": 1000,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2024-10-21",
+    "address": {
+      "zipcode": "17604",
+      "base": "대전광역시 유성구",
+      "detail": "꽃길 266, 361호",
+      "region": "대전",
+      "region_type": "일반",
+      "early_delivery_available": false
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-15T16:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0032",
+    "name": "최시우",
+    "email": "user032@example.com",
+    "phone": "010-9957-3239",
+    "birth_date": "1976-08-19",
+    "grade": "일반",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 23000,
+      "expiring_soon": {
+        "amount": 2000,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2022-10-18",
+    "address": {
+      "zipcode": "53097",
+      "base": "서울특별시 강남구",
+      "detail": "꽃길 216, 1195호",
+      "region": "서울",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-14T11:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0033",
+    "name": "송다은",
+    "email": "user033@example.com",
+    "phone": "010-6603-2263",
+    "birth_date": "1999-08-14",
+    "grade": "골드",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 12000,
+      "expiring_soon": {
+        "amount": 500,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2026-07-27",
+    "address": {
+      "zipcode": "55575",
+      "base": "인천광역시 옹진군 백령면",
+      "detail": "중앙로 23, 903호",
+      "region": "도서산간",
+      "region_type": "도서산간",
+      "early_delivery_available": false
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-27T06:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0034",
+    "name": "오건우",
+    "email": "user034@example.com",
+    "phone": "010-4893-6909",
+    "birth_date": "1985-12-24",
+    "grade": "실버",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 15800,
+      "expiring_soon": {
+        "amount": 1000,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2026-08-27",
+    "address": {
+      "zipcode": "54706",
+      "base": "서울특별시 마포구",
+      "detail": "은행나무로 257, 807호",
+      "region": "서울",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-17T21:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0035",
+    "name": "황도윤",
+    "email": "user035@example.com",
+    "phone": "010-9090-9615",
+    "birth_date": "2001-07-14",
+    "grade": "일반",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 1200,
+      "expiring_soon": {
+        "amount": 1200,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2025-06-19",
+    "address": {
+      "zipcode": "26176",
+      "base": "인천광역시 연수구",
+      "detail": "은행나무로 193, 447호",
+      "region": "인천",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-12T00:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0036",
+    "name": "장하은",
+    "email": "user036@example.com",
+    "phone": "010-3029-1023",
+    "birth_date": "1986-06-25",
+    "grade": "골드",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 8200,
+      "expiring_soon": {
+        "amount": 1000,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2026-02-12",
+    "address": {
+      "zipcode": "13919",
+      "base": "경기도 용인시 수지구",
+      "detail": "행복로 6, 854호",
+      "region": "경기",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-12T11:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0037",
+    "name": "강서연",
+    "email": "user037@example.com",
+    "phone": "010-2186-1585",
+    "birth_date": "1979-07-16",
+    "grade": "실버",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 3500,
+      "expiring_soon": null
+    },
+    "join_date": "2025-04-28",
+    "address": {
+      "zipcode": "23210",
+      "base": "경기도 성남시 분당구",
+      "detail": "해오름길 94, 1142호",
+      "region": "경기",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-15T15:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0038",
+    "name": "강다은",
+    "email": "user038@example.com",
+    "phone": "010-3372-2149",
+    "birth_date": "2004-07-13",
+    "grade": "일반",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 15800,
+      "expiring_soon": {
+        "amount": 500,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2022-11-09",
+    "address": {
+      "zipcode": "29511",
+      "base": "서울특별시 마포구",
+      "detail": "행복로 56, 556호",
+      "region": "서울",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-12T00:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0039",
+    "name": "조현우",
+    "email": "user039@example.com",
+    "phone": "010-9290-4811",
+    "birth_date": "1976-02-20",
+    "grade": "VIP",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 8200,
+      "expiring_soon": null
+    },
+    "join_date": "2022-02-04",
+    "address": {
+      "zipcode": "13553",
+      "base": "광주광역시 서구",
+      "detail": "행복로 161, 574호",
+      "region": "광주",
+      "region_type": "일반",
+      "early_delivery_available": false
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-27T21:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0040",
+    "name": "정윤서",
+    "email": "user040@example.com",
+    "phone": "010-4455-2464",
+    "birth_date": "1991-08-13",
+    "grade": "골드",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 8200,
+      "expiring_soon": null
+    },
+    "join_date": "2026-08-21",
+    "address": {
+      "zipcode": "40429",
+      "base": "인천광역시 연수구",
+      "detail": "해오름길 286, 1024호",
+      "region": "인천",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-14T06:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0041",
+    "name": "조태윤",
+    "email": "user041@example.com",
+    "phone": "010-4907-9550",
+    "birth_date": "1995-06-22",
+    "grade": "VIP",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 12000,
+      "expiring_soon": null
+    },
+    "join_date": "2024-06-27",
+    "address": {
+      "zipcode": "10298",
+      "base": "서울특별시 관악구",
+      "detail": "은행나무로 84, 169호",
+      "region": "서울",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-24T14:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0042",
+    "name": "박시우",
+    "email": "user042@example.com",
+    "phone": "010-4233-9225",
+    "birth_date": "1972-05-12",
+    "grade": "골드",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 23000,
+      "expiring_soon": {
+        "amount": 1000,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2025-12-13",
+    "address": {
+      "zipcode": "50086",
+      "base": "경기도 용인시 수지구",
+      "detail": "행복로 183, 869호",
+      "region": "경기",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-22T01:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0043",
+    "name": "오하준",
+    "email": "user043@example.com",
+    "phone": "010-2556-4581",
+    "birth_date": "1974-11-02",
+    "grade": "일반",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 3500,
+      "expiring_soon": {
+        "amount": 1000,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2024-04-19",
+    "address": {
+      "zipcode": "39093",
+      "base": "부산광역시 수영구",
+      "detail": "은행나무로 57, 1040호",
+      "region": "부산",
+      "region_type": "일반",
+      "early_delivery_available": false
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-13T02:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0044",
+    "name": "이유준",
+    "email": "user044@example.com",
+    "phone": "010-3864-6303",
+    "birth_date": "2005-08-12",
+    "grade": "실버",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 500,
+      "expiring_soon": null
+    },
+    "join_date": "2022-10-17",
+    "address": {
+      "zipcode": "44303",
+      "base": "서울특별시 마포구",
+      "detail": "중앙로 198, 634호",
+      "region": "서울",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-21T19:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0045",
+    "name": "권지아",
+    "email": "user045@example.com",
+    "phone": "010-8445-5099",
+    "birth_date": "1985-10-11",
+    "grade": "일반",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 23000,
+      "expiring_soon": {
+        "amount": 2000,
+        "expires_at": "2026-12-31"
+      }
+    },
+    "join_date": "2023-03-03",
+    "address": {
+      "zipcode": "27715",
+      "base": "서울특별시 성동구",
+      "detail": "해오름길 20, 474호",
+      "region": "서울",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-19T20:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0046",
+    "name": "강서윤",
+    "email": "user046@example.com",
+    "phone": "010-9033-2064",
+    "birth_date": "1993-11-02",
+    "grade": "일반",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 5000,
+      "expiring_soon": null
+    },
+    "join_date": "2025-12-12",
+    "address": {
+      "zipcode": "34183",
+      "base": "광주광역시 서구",
+      "detail": "행복로 109, 122호",
+      "region": "광주",
+      "region_type": "일반",
+      "early_delivery_available": false
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-16T01:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0047",
+    "name": "류건우",
+    "email": "user047@example.com",
+    "phone": "010-3978-1059",
+    "birth_date": "1984-08-01",
+    "grade": "골드",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 5000,
+      "expiring_soon": null
+    },
+    "join_date": "2025-11-18",
+    "address": {
+      "zipcode": "13318",
+      "base": "서울특별시 성동구",
+      "detail": "은행나무로 48, 1187호",
+      "region": "서울",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "active",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-24T18:00:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0048",
+    "name": "한채원",
+    "email": "user048@example.com",
+    "phone": "010-5784-5975",
+    "birth_date": "1965-04-22",
+    "grade": "골드",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 3500,
+      "expiring_soon": null
+    },
+    "join_date": "2024-04-06",
+    "address": {
+      "zipcode": "31358",
+      "base": "대구광역시 수성구",
+      "detail": "해오름길 13, 520호",
+      "region": "대구",
+      "region_type": "일반",
+      "early_delivery_available": false
+    },
+    "status": "dormant",
+    "marketing_consent": false,
+    "is_adult_verified": true,
+    "last_login_at": "2025-08-14T21:03:00+09:00",
+    "memo_for_agent": null
+  },
+  {
+    "customer_id": "C0049",
+    "name": "강민준",
+    "email": "user049@example.com",
+    "phone": "010-8465-7719",
+    "birth_date": "1999-09-13",
+    "grade": "실버",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 0,
+      "expiring_soon": null
+    },
+    "join_date": "2024-03-28",
+    "address": {
+      "zipcode": "27610",
+      "base": "서울특별시 관악구",
+      "detail": "행복로 157, 489호",
+      "region": "서울",
+      "region_type": "일반",
+      "early_delivery_available": true
+    },
+    "status": "withdrawn",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-26T20:00:00+09:00",
+    "memo_for_agent": null,
+    "withdrawn_at": "2026-10-02T11:20:00+09:00"
+  },
+  {
+    "customer_id": "C0050",
+    "name": "이준서",
+    "email": "user050@example.com",
+    "phone": "010-3042-8480",
+    "birth_date": "1996-05-12",
+    "grade": "실버",
+    "grade_updated_at": "2026-11-01",
+    "points": {
+      "balance": 500,
+      "expiring_soon": null
+    },
+    "join_date": "2026-01-27",
+    "address": {
+      "zipcode": "34570",
+      "base": "부산광역시 해운대구",
+      "detail": "중앙로 29, 104호",
+      "region": "부산",
+      "region_type": "일반",
+      "early_delivery_available": false
+    },
+    "status": "active",
+    "marketing_consent": true,
+    "is_adult_verified": true,
+    "last_login_at": "2026-11-19T19:00:00+09:00",
+    "memo_for_agent": "2026-10 악성 반품 의심 이력(반품 6회/30일). 재량 보상 지급 금지."
+  }
+]
