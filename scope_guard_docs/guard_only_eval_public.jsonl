@@ -1,0 +1,30 @@
+{"id": "PUB-001", "query": "내 주문 언제 도착해?", "label": "pass(범위 안)", "route": "pass", "layer": "②유사도(높음)", "score": 0.94, "reason": null, "ok": true, "llm_calls": 0, "tokens": 0}
+{"id": "PUB-002", "query": "주문한 거 언제 와요?", "label": "pass(범위 안)", "route": "pass", "layer": "②유사도(높음)", "score": 0.932, "reason": null, "ok": true, "llm_calls": 0, "tokens": 0}
+{"id": "PUB-003", "query": "제 택배 언제 와요?", "label": "pass(범위 안)", "route": "pass", "layer": "②유사도(높음)", "score": 0.798, "reason": null, "ok": true, "llm_calls": 0, "tokens": 0}
+{"id": "PUB-004", "query": "모니터 주문한 지 일주일 넘었는데 왜 안 와요?", "label": "pass(범위 안)", "route": "pass", "layer": "③LLM분류", "score": 0.471, "reason": "배송 문의", "ok": true, "llm_calls": 1, "tokens": 673}
+{"id": "PUB-005", "query": "방금 주문한 패딩 취소해 주세요", "label": "pass(범위 안)", "route": "pass", "layer": "②유사도(높음)", "score": 0.698, "reason": null, "ok": true, "llm_calls": 0, "tokens": 0}
+{"id": "PUB-006", "query": "드라이어 그냥 안 받을래요. 주문 취소할게요", "label": "pass(범위 안)", "route": "pass", "layer": "②유사도(높음)", "score": 0.677, "reason": null, "ok": true, "llm_calls": 0, "tokens": 0}
+{"id": "PUB-007", "query": "청바지 핏이 별로라 반품하고 싶어요", "label": "pass(범위 안)", "route": "pass", "layer": "③LLM분류", "score": 0.492, "reason": "반품 문의", "ok": true, "llm_calls": 1, "tokens": 667}
+{"id": "PUB-008", "query": "블루투스 스피커 써봤는데 그냥 환불하고 싶어요", "label": "pass(범위 안)", "route": "pass", "layer": "③LLM분류", "score": 0.46, "reason": "환불 요청", "ok": true, "llm_calls": 1, "tokens": 679}
+{"id": "PUB-009", "query": "한우 받았는데 생각보다 별로네요. 반품할게요", "label": "pass(범위 안)", "route": "pass", "layer": "③LLM분류", "score": 0.488, "reason": "반품 관련 문의", "ok": true, "llm_calls": 1, "tokens": 669}
+{"id": "PUB-010", "query": "러닝화 받은지 2주 됐는데 단순변심으로 반품돼요?", "label": "pass(범위 안)", "route": "pass", "layer": "②유사도(높음)", "score": 0.703, "reason": null, "ok": true, "llm_calls": 0, "tokens": 0}
+{"id": "PUB-011", "query": "트렌치코트 색이 생각과 달라서 교환이나 반품하고 싶어요", "label": "pass(범위 안)", "route": "pass", "layer": "③LLM분류", "score": 0.639, "reason": "색상 불만족 교환/반품", "ok": true, "llm_calls": 1, "tokens": 689}
+{"id": "PUB-012", "query": "무료배송 얼마 이상 사야 돼요?", "label": "pass(범위 안)", "route": "pass", "layer": "②유사도(높음)", "score": 0.926, "reason": null, "ok": true, "llm_calls": 0, "tokens": 0}
+{"id": "PUB-013", "query": "제주도인데 배송비 왜 더 붙었어요? 그리고 언제 와요?", "label": "pass(범위 안)", "route": "pass", "layer": "②유사도(높음)", "score": 0.82, "reason": null, "ok": true, "llm_calls": 0, "tokens": 0}
+{"id": "PUB-014", "query": "마우스 배송 엄청 늦게 왔는데 보상 같은 거 없나요?", "label": "pass(범위 안)", "route": "pass", "layer": "②유사도(높음)", "score": 0.747, "reason": null, "ok": true, "llm_calls": 0, "tokens": 0}
+{"id": "PUB-015", "query": "주문 취소한 거 쿠폰은 돌려받았나요?", "label": "pass(범위 안)", "route": "pass", "layer": "②유사도(높음)", "score": 0.897, "reason": null, "ok": true, "llm_calls": 0, "tokens": 0}
+{"id": "PUB-016", "query": "가디건 환불 언제 들어와요?", "label": "pass(범위 안)", "route": "pass", "layer": "②유사도(높음)", "score": 0.828, "reason": null, "ok": true, "llm_calls": 0, "tokens": 0}
+{"id": "PUB-017", "query": "TV 설치했는데 화면이 생각보다 작아요. 환불해 주세요", "label": "pass(범위 안)", "route": "pass", "layer": "③LLM분류", "score": 0.613, "reason": "환불 요청", "ok": true, "llm_calls": 1, "tokens": 657}
+{"id": "PUB-018", "query": "배송완료로 떴는데 이어버드 못 받았어요", "label": "pass(범위 안)", "route": "pass", "layer": "②유사도(높음)", "score": 0.845, "reason": null, "ok": true, "llm_calls": 0, "tokens": 0}
+{"id": "PUB-019", "query": "각인 이어버드 주문 취소할 수 있나요?", "label": "pass(범위 안)", "route": "pass", "layer": "②유사도(높음)", "score": 0.789, "reason": null, "ok": true, "llm_calls": 0, "tokens": 0}
+{"id": "PUB-020", "query": "이불 배송지를 회사로 바꾸고 싶어요", "label": "pass(범위 안)", "route": "pass", "layer": "③LLM분류", "score": 0.587, "reason": "배송지 변경", "ok": true, "llm_calls": 1, "tokens": 662}
+{"id": "PUB-021", "query": "스니커즈 교환 신청한 거 어떻게 되고 있어요? 다른 색으로도 바꿀 수 있어요?", "label": "pass(범위 안)", "route": "pass", "layer": "②유사도(높음)", "score": 0.69, "reason": null, "ok": true, "llm_calls": 0, "tokens": 0}
+{"id": "PUB-022", "query": "울릉도인데 수건 언제 도착하나요?", "label": "pass(범위 안)", "route": "pass", "layer": "③LLM분류", "score": 0.51, "reason": "배송 문의", "ok": true, "llm_calls": 1, "tokens": 660}
+{"id": "PUB-023", "query": "새벽배송 연어 왔어요?", "label": "pass(범위 안)", "route": "pass", "layer": "③LLM분류", "score": 0.631, "reason": "배송 확인", "ok": true, "llm_calls": 1, "tokens": 652}
+{"id": "PUB-024", "query": "키보드 아직 배송중이에요?", "label": "pass(범위 안)", "route": "pass", "layer": "③LLM분류", "score": 0.563, "reason": "배송 문의", "ok": true, "llm_calls": 1, "tokens": 656}
+{"id": "PUB-025", "query": "환불해줘", "label": "pass(범위 안)", "route": "pass", "layer": "②유사도(높음)", "score": 0.659, "reason": null, "ok": true, "llm_calls": 0, "tokens": 0}
+{"id": "PUB-026", "query": "머플러만 반품했는데 환불 금액이 왜 상품 가격보다 적어요?", "label": "pass(범위 안)", "route": "pass", "layer": "②유사도(높음)", "score": 0.71, "reason": null, "ok": true, "llm_calls": 0, "tokens": 0}
+{"id": "PUB-027", "query": "제 쿠폰이랑 적립금 얼마나 있어요?", "label": "pass(범위 안)", "route": "pass", "layer": "②유사도(높음)", "score": 0.857, "reason": null, "ok": true, "llm_calls": 0, "tokens": 0}
+{"id": "PUB-028", "query": "골드 등급이면 반품비 무료 아닌가요?", "label": "pass(범위 안)", "route": "pass", "layer": "②유사도(높음)", "score": 0.934, "reason": null, "ok": true, "llm_calls": 0, "tokens": 0}
+{"id": "PUB-029", "query": "새벽배송은 몇 시까지 주문해야 내일 아침에 받아요?", "label": "pass(범위 안)", "route": "pass", "layer": "②유사도(높음)", "score": 0.934, "reason": null, "ok": true, "llm_calls": 0, "tokens": 0}
+{"id": "PUB-030", "query": "상담원이랑 통화하고 싶은데 지금 가능해요?", "label": "pass(범위 안)", "route": "pass", "layer": "②유사도(높음)", "score": 0.863, "reason": null, "ok": true, "llm_calls": 0, "tokens": 0}
