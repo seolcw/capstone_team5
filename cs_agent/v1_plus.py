@@ -200,7 +200,10 @@ def run(query, session, case_id=None):
         if not calls:
             answer = msg.content
             break
-        messages.append({"role": "assistant", "content": None, "tool_calls": calls})
+        if msg.tool_calls:  # 모델이 돌려준 메시지를 그대로 이어 붙임 (Gemini 등은 추가 필드를 다시 보내야 함, qwen 은 동작 동일)
+            messages.append(msg.model_dump(exclude_none=True))
+        else:
+            messages.append({"role": "assistant", "content": None, "tool_calls": calls})
         for call in calls:
             name = call["function"]["name"]
             try:
