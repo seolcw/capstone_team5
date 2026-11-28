@@ -1,6 +1,56 @@
 # 캡스톤 5팀 — E-commerce 상담 에이전트
 
-집중 영역: **시스템 실행 — 비즈니스 로직 위반** (취소·반품 가능 여부를 LLM 이 잘못 판단하는 문제)
+해결 영역: **신뢰성 · 보안** (Baseline B 에이전트의 잘못된 안내 · 프롬프트 인젝션)
+
+## ✅ 평가 대상: v5 에이전트 (`cs_agent/v5_agent.py`)
+
+Baseline B 구조(LLM 이 도구를 고르고, 결과를 보고 다음 행동을 정함)를 유지하고, 실패 원인을 분석해 **도구 · 검색(RAG) · 행동 수단 · 프롬프트 우선순위**를 고친 최종 버전입니다.
+구조도 `docs/architecture_v4.png` (v5 는 같은 구조에 프롬프트 위계 추가) · 원인 분석과 단계별 측정 `docs/b_failure_analysis.md`
+
+### 1) 설치
+```powershell
+git clone https://github.com/seolcw/capstone_team5.git
+cd capstone_team5
+copy .env.example .env      # LLM_BASE_URL · LLM_API_KEY · LLM_MODEL 확인 (기본: qwen2.5-14b-instruct, localhost:8000)
+py -m uv sync               # Python 3.14 + 의존성
+```
+LLM 서버(vLLM)에 연결돼 있어야 합니다. 학교 서버는 SSH 터널(`ssh -N -L 8000:localhost:8000 tunnel@117.16.244.167`).
+
+### 2) 평가 실행
+```powershell
+# 공개 평가셋 30문항
+py -m uv run python eval_b.py --versions v5 --runs 1 --cases all
+
+# 다른 평가 파일: data/ 폴더에 넣고 파일명 지정 (형식은 data/eval_public.jsonl 과 동일)
+py -m uv run python eval_b.py --versions v5 --runs 1 --cases all --data eval_private.jsonl
+```
+결과: `results/<시각>/summary.md` (통과율 · 정답 문구 충족률 · 금지 표현 · action 일치 · 도구 호출 · 토큰 · 응답 시간) 와 `runs.jsonl` (실행별 도구 호출 순서 · 답변)
+
+입력 관문의 임베딩 단계까지 쓰려면 `--with sentence-transformers` 를 붙입니다 (`py -m uv run --with sentence-transformers python eval_b.py ...`). 없으면 그 단계만 건너뛰고 LLM 분류로 동작합니다.
+
+### 3) 함수로 직접 호출
+```python
+from cs_agent.v5_agent import run
+out = run("청바지 핏이 별로라 반품하고 싶어요", {"customer_id": "C0007", "authenticated": True})
+out["answer"]       # 고객에게 보낼 답변
+out["action"]       # answer / confirm / clarify / escalate
+out["escalation"]   # 상담원 연결 코드 (E01~E11) 또는 None
+out["tool_calls"]   # [{"tool": ..., "args": ...}, ...] 호출 순서
+```
+직접 대화: `py -m uv run python chat_v3.py C0001 --v5`
+
+### 4) 주요 결과 (qwen2.5-14b, 공개 30문항, 자체 측정)
+| | Baseline B 계열 v1+ | v4 (원인 분석 개선) | **v5 (최종)** |
+|---|---|---|---|
+| 통과 | 3/30 | 11~12/30 | 10/30 |
+| action 일치 | 26/30 | 22/30 | **27/30** |
+| 잘못된 안내 (금지 표현) | 0 | 1 | **0** |
+
+비교용으로 코드 우선 하이브리드 v3(`cs_agent/v3_hybrid.py`)도 남겨 두었습니다. 아래는 개발 과정 기록입니다.
+
+---
+
+## 개발 기록
 
 ## 버전별 구성 (같은 데이터·같은 도구, 판단 주체만 다름)
 
