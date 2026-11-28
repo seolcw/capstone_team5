@@ -18,6 +18,12 @@ wheels/
 # 실행 결과 (각자 로컬에만 저장; REPORT.md 가 인용하는 결과만 커밋)
 results/*
 !results/20261127-135321/
+!results/20261127-155106/
+!results/20261127-162737/
+!results/20261127-165638/
+!results/20261127-191517/
+!results/20261127-192250/
+!results/scope_v3_20261127-191335.jsonl
 
 # OS / editor
 .DS_Store

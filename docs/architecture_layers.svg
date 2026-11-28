@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="640" viewBox="0 0 1100 640" font-family="Malgun Gothic, 'Noto Sans KR', sans-serif">
+  <style>
+    .band{fill:#eef1f6}
+    .box{fill:#fff;stroke:#c9cfd9;stroke-width:1}
+    .t{font-size:13px;fill:#1f2533;text-anchor:middle;font-weight:600}
+    .h{font-size:17px;fill:#2a3f8f;font-weight:700}
+    .s{font-size:11px;fill:#6b7385}
+    .side{fill:#fff;stroke:#9aa3b5;stroke-dasharray:4 3}
+    .li{font-size:13px;fill:#1f2533}
+    .ar{stroke:#7a8296;stroke-width:1.2;fill:none;marker-end:url(#m);marker-start:url(#m)}
+    .al{font-size:10px;fill:#6b7385}
+    .dark{fill:#2a3f8f}
+    .dbox{fill:none;stroke:#8fa0d8;stroke-width:1}
+    .dt{font-size:13px;fill:#fff;text-anchor:middle;font-weight:600}
+  </style>
+  <defs><marker id="m" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7a8296"/></marker></defs>
+
+  <!-- user -->
+  <rect x="270" y="14" width="350" height="40" class="box" stroke="#1f2533"/>
+  <text x="445" y="39" class="t">고객 · 로그인 세션 (고객 번호)</text>
+  <line x1="445" y1="56" x2="445" y2="80" class="ar"/>
+
+  <!-- frontend -->
+  <rect x="30" y="82" width="800" height="62" class="band"/>
+  <text x="46" y="110" class="h">프론트엔드</text><text x="46" y="128" class="s">터미널 채팅</text>
+  <rect x="200" y="96" width="190" height="34" class="box"/><text x="295" y="118" class="t">채팅 (chat_v3.py)</text>
+  <rect x="405" y="96" width="190" height="34" class="box"/><text x="500" y="118" class="t">경로 · 토큰 · 시간 표시</text>
+  <rect x="610" y="96" width="205" height="34" class="box"/><text x="712" y="118" class="t">근거 문서 번호 (REF)</text>
+  <line x1="445" y1="146" x2="445" y2="168" class="ar"/>
+
+  <!-- input guard -->
+  <rect x="30" y="170" width="800" height="62" class="band"/>
+  <text x="46" y="198" class="h">입력 관문</text><text x="46" y="216" class="s">guard.py · scope_guard.py</text>
+  <rect x="200" y="184" width="140" height="34" class="box"/><text x="270" y="206" class="t">① 긴급 단어 (코드)</text>
+  <rect x="350" y="184" width="160" height="34" class="box"/><text x="430" y="206" class="t">② 임베딩 유사도</text>
+  <rect x="520" y="184" width="150" height="34" class="box"/><text x="595" y="206" class="t">③ 애매하면 LLM 분류</text>
+  <rect x="680" y="184" width="135" height="34" class="box"/><text x="747" y="206" class="t">범위 밖 → 종료</text>
+  <line x1="445" y1="234" x2="445" y2="256" class="ar"/>
+
+  <!-- orchestration -->
+  <rect x="30" y="258" width="800" height="62" class="band"/>
+  <text x="46" y="286" class="h">오케스트레이션</text><text x="46" y="304" class="s">v3_hybrid.py</text>
+  <rect x="200" y="272" width="140" height="34" class="box"/><text x="270" y="294" class="t">의도 분류 (LLM)</text>
+  <rect x="350" y="272" width="160" height="34" class="box"/><text x="430" y="294" class="t">오분류 방지 (코드)</text>
+  <rect x="520" y="272" width="150" height="34" class="box"/><text x="595" y="294" class="t">출력 검증 (코드)</text>
+  <rect x="680" y="272" width="135" height="34" class="box"/><text x="747" y="294" class="t">예비: v1+ Agent</text>
+
+  <line x1="165" y1="322" x2="165" y2="352" class="ar"/><text x="172" y="341" class="al">검색</text>
+  <line x1="430" y1="322" x2="430" y2="352" class="ar"/><text x="437" y="341" class="al">분류 · 문장화</text>
+  <line x1="700" y1="322" x2="700" y2="352" class="ar"/><text x="707" y="341" class="al">tool call</text>
+
+  <!-- retrieval -->
+  <rect x="30" y="354" width="260" height="128" class="band"/>
+  <text x="46" y="380" class="h">검색 계층</text><text x="46" y="397" class="s">메모리 벡터 · 승인 문서</text>
+  <rect x="44" y="408" width="232" height="30" class="box"/><text x="160" y="428" class="t">임베딩 ko-sroberta</text>
+  <rect x="44" y="444" width="232" height="30" class="box"/><text x="160" y="464" class="t">승인·시행 중 문서만 검색</text>
+
+  <!-- model -->
+  <rect x="300" y="354" width="260" height="128" class="dark"/>
+  <text x="316" y="380" class="h" fill="#fff" style="fill:#fff">모델 계층</text><text x="316" y="397" class="s" style="fill:#c8d0ee">vLLM · 로컬 모델</text>
+  <rect x="314" y="408" width="232" height="30" class="dbox"/><text x="430" y="428" class="dt">qwen2.5-14b-instruct</text>
+  <rect x="314" y="444" width="232" height="30" class="dbox"/><text x="430" y="464" class="dt">분류 · 문장 다듬기만 담당</text>
+
+  <!-- tools -->
+  <rect x="570" y="354" width="260" height="128" class="band"/>
+  <text x="586" y="380" class="h">도구 · 처리기</text><text x="586" y="397" class="s">common.py · rules.py</text>
+  <rect x="584" y="408" width="232" height="30" class="box"/><text x="700" y="428" class="t">주문 · 배송 · 반품조건 조회</text>
+  <rect x="584" y="444" width="232" height="30" class="box"/><text x="700" y="464" class="t">판정 규칙 · 상담원 연결</text>
+
+  <!-- side: ops -->
+  <rect x="855" y="82" width="215" height="180" class="side"/>
+  <text x="872" y="112" class="h">운영</text>
+  <text x="872" y="142" class="li">Trace 로그 (경로·분류)</text>
+  <text x="872" y="168" class="li">품질 평가 (eval_run)</text>
+  <text x="872" y="194" class="li">토큰 · 응답 시간 측정</text>
+  <text x="872" y="220" class="li">출력검증 대체 횟수</text>
+
+  <!-- side: security -->
+  <rect x="855" y="280" width="215" height="202" class="side"/>
+  <text x="872" y="310" class="h">보안</text>
+  <text x="872" y="340" class="li">입력 관문 (직접 인젝션)</text>
+  <text x="872" y="366" class="li">승인 문서 필터 (간접)</text>
+  <text x="872" y="392" class="li">내 주문만 조회</text>
+  <text x="872" y="418" class="li">판정은 코드</text>
+  <text x="872" y="444" class="li">출력 검증 (금지 표현)</text>
+
+  <!-- infra -->
+  <rect x="30" y="500" width="1040" height="44" class="box" stroke="#1f2533"/>
+  <text x="550" y="527" class="t">인프라 · 학교 GPU 서버 (vLLM) · SSH 터널 · uv 실행 환경</text>
+
+  <text x="30" y="580" class="li" style="font-size:12px;fill:#6b7385">흐름: 질문 → 입력 관문 → 의도 분류 → 오분류 방지 → 유형별 처리기(도구 조회 + 코드 판정) → 문장 다듬기 → 출력 검증 → 답변</text>
+  <text x="30" y="600" class="li" style="font-size:12px;fill:#6b7385">처리기가 없거나 분류가 의심되면 v1+ Agent(LLM이 도구를 골라 쓰는 Agent loop)가 처리</text>
+</svg>

@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1060" width="1400" height="1060" font-family="'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/>
+    </marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/>
+    </marker>
+  </defs>
+  <rect width="1400" height="1060" fill="#ffffff"/>
+
+  <!-- 제목 -->
+  <text x="40" y="48" font-size="28" font-weight="700" fill="#111827">캡스톤 5팀 — v1+ 시스템 구조도</text>
+  <text x="40" y="78" font-size="15" fill="#4b5563">Baseline B(Naive Agent) 구조 유지 · LLM 앞뒤를 코드로 보강 · 계층 구분은 강의 p18 「LLM 기반 AI 시스템 구조」 기준</text>
+
+  <!-- 범례 -->
+  <rect x="980" y="30" width="22" height="16" rx="3" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="1010" y="43" font-size="14" fill="#111827">v1+에서 추가·변경</text>
+  <rect x="1160" y="30" width="22" height="16" rx="3" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="1190" y="43" font-size="14" fill="#111827">v1과 동일</text>
+  <rect x="980" y="56" width="22" height="16" rx="3" fill="#fff" stroke="#b45309" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="1010" y="69" font-size="14" fill="#111827">예정 (작업 1)</text>
+
+  <!-- 좌측 계층 라벨 -->
+  <g font-size="14" font-weight="700" fill="#1e3a8a">
+    <rect x="40" y="105" width="130" height="62" rx="6" fill="#eff6ff"/><text x="105" y="133" text-anchor="middle">사용자</text><text x="105" y="153" text-anchor="middle" font-weight="400" font-size="12">채팅 · 세션</text>
+    <rect x="40" y="185" width="130" height="70" rx="6" fill="#eff6ff"/><text x="105" y="215" text-anchor="middle">보안</text><text x="105" y="235" text-anchor="middle" font-weight="400" font-size="12">입력 검사 (p18)</text>
+    <rect x="40" y="275" width="130" height="235" rx="6" fill="#eff6ff"/><text x="105" y="380" text-anchor="middle">오케스트레이션</text><text x="105" y="400" text-anchor="middle" font-weight="400" font-size="12">Agent loop (p41)</text>
+    <rect x="40" y="530" width="130" height="290" rx="6" fill="#eff6ff"/><text x="105" y="665" text-anchor="middle">도구 계층</text><text x="105" y="685" text-anchor="middle" font-weight="400" font-size="12">Tool calling (p42)</text>
+    <rect x="40" y="840" width="130" height="110" rx="6" fill="#eff6ff"/><text x="105" y="888" text-anchor="middle">검색 · 데이터</text><text x="105" y="908" text-anchor="middle" font-weight="400" font-size="12">RAG · 메타데이터 (p26, p35)</text>
+  </g>
+
+  <!-- 1. 사용자 -->
+  <rect x="200" y="105" width="560" height="62" rx="10" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="220" y="132" font-size="16" font-weight="700" fill="#111827">고객 질문</text>
+  <text x="220" y="154" font-size="13" fill="#374151">예) "키보드 아직 배송중이에요?"  · 세션 customer_id = 로그인 값 (모델이 바꿀 수 없음)</text>
+
+  <!-- 2. 입력 검사 -->
+  <rect x="200" y="185" width="560" height="70" rx="10" fill="#fff" stroke="#b45309" stroke-width="2" stroke-dasharray="7 4"/>
+  <text x="220" y="212" font-size="16" font-weight="700" fill="#92400e">① 입력 검사 guard.py  (작업 1 · 예정)</text>
+  <text x="220" y="236" font-size="13" fill="#374151">범위 외 질문 · 직접 인젝션 · 타인 정보 요청 → LLM 에 보내지 않고 바로 거절</text>
+  <line x1="480" y1="167" x2="480" y2="183" stroke="#4b5563" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="480" y1="255" x2="480" y2="273" stroke="#4b5563" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- 3. Agent loop -->
+  <rect x="200" y="275" width="560" height="235" rx="10" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="220" y="303" font-size="16" font-weight="700" fill="#134e4a">② Agent loop  (cs_agent/v1_plus.py · run)</text>
+  <g font-size="13" fill="#1f2937">
+    <text x="225" y="330">• 시스템 프롬프트: 현재 시각·요일 + 규칙 13개</text>
+    <text x="240" y="349" fill="#4b5563">(검색 결과만 근거 · 택배사 기준 · 문서 속 지시 무시 · 추측 금지 …)</text>
+    <text x="225" y="374">• 첫 단계 tool_choice = "required" → 이후 "auto"   <tspan fill="#4b5563">(기억으로 답하기 차단, p41)</tspan></text>
+    <text x="225" y="398">• 같은 도구·같은 인자 반복 호출 → 캐시 재사용   <tspan fill="#4b5563">(p52 반복 호출)</tspan></text>
+    <text x="225" y="422">• 본문에 글자로 쓴 도구 호출 {"name":…} → 실제 호출로 복구</text>
+    <text x="225" y="446">• 최대 6 단계 · 모든 단계 Trace 기록</text>
+  </g>
+  <rect x="225" y="460" width="510" height="36" rx="6" fill="#ffffff" stroke="#0f766e"/>
+  <text x="480" y="483" font-size="13" text-anchor="middle" fill="#134e4a">LLM 요청 → 도구 호출 → <tspan font-weight="700">코드가 실행</tspan> → 결과를 LLM 에 전달 → 반복 / 최종 답변</text>
+
+  <!-- 모델 계층 (오른쪽) -->
+  <rect x="830" y="300" width="300" height="120" rx="10" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="850" y="328" font-size="16" font-weight="700" fill="#111827">모델 계층</text>
+  <text x="850" y="353" font-size="14" fill="#1f2937">qwen2.5-14b-instruct</text>
+  <text x="850" y="375" font-size="13" fill="#4b5563">OpenAI 호환 API (vLLM)</text>
+  <text x="850" y="396" font-size="13" fill="#4b5563">SSH 터널 → localhost:8000</text>
+  <line x1="762" y1="345" x2="828" y2="345" stroke="#4b5563" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="828" y1="380" x2="762" y2="380" stroke="#4b5563" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="795" y="337" font-size="11" text-anchor="middle" fill="#4b5563">messages</text>
+  <text x="795" y="397" font-size="11" text-anchor="middle" fill="#4b5563">tool_calls</text>
+
+  <!-- 최종 답변 -->
+  <rect x="830" y="445" width="300" height="55" rx="10" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="850" y="478" font-size="16" font-weight="700" fill="#111827">최종 답변 (한국어)</text>
+  <line x1="762" y1="472" x2="828" y2="472" stroke="#4b5563" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- 4. 도구 계층 -->
+  <line x1="420" y1="512" x2="420" y2="528" stroke="#0f766e" stroke-width="2.5" marker-end="url(#arrG)"/>
+  <line x1="540" y1="528" x2="540" y2="512" stroke="#0f766e" stroke-width="2.5" marker-end="url(#arrG)"/>
+  <rect x="200" y="530" width="930" height="290" rx="10" fill="#ffffff" stroke="#0f766e" stroke-width="2"/>
+  <rect x="200" y="530" width="930" height="40" rx="10" fill="#0f766e"/>
+  <text x="220" y="557" font-size="16" font-weight="700" fill="#ffffff">③ ★ 도구 결과 검증 — 도구가 LLM 에게 돌려주기 전에 코드가 검사·정리 (v1+ 핵심)</text>
+
+  <!-- 도구 카드들 -->
+  <g font-size="13">
+    <rect x="220" y="585" width="290" height="105" rx="8" fill="#ccfbf1" stroke="#0f766e"/>
+    <text x="235" y="608" font-weight="700" fill="#134e4a">search_knowledge (정책 검색)</text>
+    <text x="235" y="630" fill="#1f2937">• 승인 + 시행 중 + 공개용 문서만</text>
+    <text x="235" y="650" fill="#1f2937">• 본문을 [참고자료] 경계로 감싸기</text>
+    <text x="235" y="672" fill="#0f766e" font-weight="700">→ 정보 충돌 · 간접 인젝션 차단</text>
+
+    <rect x="525" y="585" width="290" height="105" rx="8" fill="#ccfbf1" stroke="#0f766e"/>
+    <text x="540" y="608" font-weight="700" fill="#134e4a">list_orders · get_order</text>
+    <text x="540" y="630" fill="#1f2937">• 현재_배송상태 = 택배사 기준</text>
+    <text x="540" y="650" fill="#1f2937">• 택배사 · 날짜(요일 포함) 표시 필드</text>
+    <text x="540" y="672" fill="#0f766e" font-weight="700">→ 데이터 정합성</text>
+
+    <rect x="830" y="585" width="285" height="105" rx="8" fill="#ccfbf1" stroke="#0f766e"/>
+    <text x="845" y="608" font-weight="700" fill="#134e4a">get_shipment</text>
+    <text x="845" y="630" fill="#1f2937">• 도착예정·최초예정·완료 표시 필드</text>
+    <text x="845" y="650" fill="#1f2937">• NOT_FOUND 에 해결 방법(hint)</text>
+    <text x="845" y="672" fill="#0f766e" font-weight="700">→ 추측 실패 후 포기 감소</text>
+
+    <rect x="220" y="705" width="430" height="95" rx="8" fill="#f3f4f6" stroke="#9ca3af"/>
+    <text x="235" y="728" font-weight="700" fill="#111827">get_return_conditions · escalate_to_agent</text>
+    <text x="235" y="750" fill="#374151">v1 과 동일 (반품 조건 조회 · 상담원 연결 E01~E11)</text>
+    <text x="235" y="772" fill="#374151">※ 취소·반품 '판정'은 여전히 LLM → v2 에서 코드로 이동</text>
+
+    <rect x="665" y="705" width="450" height="95" rx="8" fill="#f3f4f6" stroke="#9ca3af"/>
+    <text x="680" y="728" font-weight="700" fill="#111827">세션 범위 접근 제어 (v1 부터 있음)</text>
+    <text x="680" y="750" fill="#374151">모든 조회는 세션 customer_id 의 데이터만</text>
+    <text x="680" y="772" fill="#374151">타인 주문은 존재 여부도 숨김 (NOT_FOUND)</text>
+  </g>
+
+  <!-- 5. 검색·데이터 -->
+  <line x1="365" y1="822" x2="365" y2="838" stroke="#4b5563" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="770" y1="822" x2="770" y2="838" stroke="#4b5563" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="200" y="840" width="440" height="110" rx="10" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="220" y="866" font-size="15" font-weight="700" fill="#111827">정책 문서 55개 (knowledge/*.md)</text>
+  <text x="220" y="890" font-size="13" fill="#374151">메타데이터: status · 시행기간 · visibility</text>
+  <text x="220" y="912" font-size="13" fill="#b91c1c">제외 13개: 폐기 4 · 초안 2 · 반려 1 · 만료 1 · 미검증 1(REF-020)</text>
+  <text x="220" y="932" font-size="13" fill="#b91c1c">              + 내부용 4 (MAN-001/003/005, CPN-007)</text>
+
+  <rect x="660" y="840" width="470" height="110" rx="10" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="680" y="866" font-size="15" font-weight="700" fill="#111827">시스템 데이터 (system/*.json)</text>
+  <text x="680" y="890" font-size="13" fill="#374151">orders 200 · shipments 200 · products 100</text>
+  <text x="680" y="912" font-size="13" fill="#374151">return_conditions 100 · customers 50 · coupons 50</text>
+  <text x="680" y="932" font-size="13" fill="#b91c1c">주문 상태 ≠ 택배사 상태 불일치 존재 → 택배사 우선</text>
+
+  <!-- 운영 (오른쪽 세로) -->
+  <rect x="1160" y="105" width="200" height="845" rx="10" fill="#fefce8" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="1260" y="135" font-size="16" font-weight="700" text-anchor="middle" fill="#713f12">운영 · 평가 (p18)</text>
+  <g font-size="13" fill="#422006">
+    <text x="1175" y="170" font-weight="700">Trace</text>
+    <text x="1175" y="190">단계별 도구·인자·결과·</text>
+    <text x="1175" y="208">토큰·시간 기록</text>
+    <text x="1175" y="245" font-weight="700">eval_run.py</text>
+    <text x="1175" y="265">v1 vs v1p 같은 케이스</text>
+    <text x="1175" y="283">12개 × 3회 비교</text>
+    <text x="1175" y="320" font-weight="700">demo_v1p.py</text>
+    <text x="1175" y="340">질문 하나를 v1·v1+ 에</text>
+    <text x="1175" y="358">넣고 나란히 출력</text>
+    <text x="1175" y="400" font-weight="700">결과 (12케이스×3회)</text>
+    <text x="1175" y="422">통과율 3 → 9 /36</text>
+    <text x="1175" y="442">정답문구 13% → 55%</text>
+    <text x="1175" y="462">잘못된 안내 3 → 0</text>
+    <text x="1175" y="482">악성·폐기 문서 6 → 0</text>
+    <text x="1175" y="502">도구 미호출 27 → 0</text>
+    <text x="1175" y="522">인젝션(FREE10K) 차단</text>
+    <text x="1175" y="560" font-weight="700">비용 (트레이드오프)</text>
+    <text x="1175" y="582">토큰 1.5k → 4.7k</text>
+    <text x="1175" y="602">응답 1.7s → 2.5s</text>
+  </g>
+
+  <!-- 하단 요약 -->
+  <rect x="40" y="975" width="1320" height="62" rx="10" fill="#f0fdfa" stroke="#0f766e"/>
+  <text x="60" y="1002" font-size="15" font-weight="700" fill="#134e4a">핵심: LLM 은 바꾸지 않고, LLM 이 받는 정보를 코드로 검증한다</text>
+  <text x="60" y="1024" font-size="13" fill="#1f2937">해결 영역 — 지식 검색: 정보 충돌(핵심) · 보안: 간접 프롬프트 인젝션 · 신뢰성: 데이터 정합성 · (발견) 도구 호출 안 함</text>
+</svg>

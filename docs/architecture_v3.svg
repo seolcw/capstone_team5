@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1420" width="1500" height="1420" font-family="'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#374151"/></marker>
+    <marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c2410c"/></marker>
+  </defs>
+  <rect width="1500" height="1420" fill="#fff"/>
+
+  <!-- 제목 · 범례 -->
+  <text x="40" y="50" font-size="28" font-weight="700" fill="#111827">캡스톤 5팀 — 전체 처리 흐름 (v3 Hybrid)</text>
+  <text x="40" y="80" font-size="15" fill="#4b5563">LLM 은 이해·문장화만, 사실 확정·판정·검증은 코드 · 분류가 틀리면 코드 경로 대신 범용 agent 로 · 계층 구분은 강의 p18 기준</text>
+  <g font-size="14" fill="#111827">
+    <rect x="1010" y="30" width="22" height="16" rx="3" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/><text x="1040" y="43">LLM 호출</text>
+    <rect x="1130" y="30" width="22" height="16" rx="3" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/><text x="1160" y="43">코드 (결정론적)</text>
+    <rect x="1290" y="30" width="22" height="16" rx="3" fill="#ffedd5" stroke="#c2410c" stroke-width="2"/><text x="1320" y="43">안전망 (agent)</text>
+    <rect x="1010" y="56" width="22" height="16" rx="3" fill="#fff" stroke="#b45309" stroke-width="2" stroke-dasharray="5 3"/><text x="1040" y="69">예정 (작업 1)</text>
+    <rect x="1130" y="56" width="22" height="16" rx="3" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.5"/><text x="1160" y="69">데이터 · 인프라</text>
+  </g>
+
+  <!-- 계층 라벨 -->
+  <g font-size="13" font-weight="700" fill="#1e3a8a" text-anchor="middle">
+    <rect x="30" y="105" width="110" height="60" rx="6" fill="#eff6ff"/><text x="85" y="140">사용자</text>
+    <rect x="30" y="180" width="110" height="60" rx="6" fill="#eff6ff"/><text x="85" y="208">보안</text><text x="85" y="226" font-weight="400" font-size="11">입력 검사</text>
+    <rect x="30" y="255" width="110" height="250" rx="6" fill="#eff6ff"/><text x="85" y="375">오케스트레이션</text><text x="85" y="393" font-weight="400" font-size="11">분류 · 라우팅</text>
+    <rect x="30" y="520" width="110" height="400" rx="6" fill="#eff6ff"/><text x="85" y="712">도구 · 처리기</text><text x="85" y="730" font-weight="400" font-size="11">Tool / Handler</text>
+    <rect x="30" y="935" width="110" height="160" rx="6" fill="#eff6ff"/><text x="85" y="1010">출력</text><text x="85" y="1028" font-weight="400" font-size="11">문장화 · 검증</text>
+  </g>
+
+  <!-- 1 질문 -->
+  <rect x="160" y="105" width="880" height="60" rx="10" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="180" y="131" font-size="16" font-weight="700" fill="#111827">고객 질문 + 세션</text>
+  <text x="180" y="152" font-size="13" fill="#374151">예) "모니터 주문한 지 일주일 넘었는데 왜 안 와요?" · customer_id = 로그인 값 (모델이 바꿀 수 없음) · 기준 시각 11월 28일(토) 14:00</text>
+  <line x1="600" y1="165" x2="600" y2="178" stroke="#374151" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- 2 guard -->
+  <rect x="160" y="180" width="880" height="60" rx="10" fill="#fff" stroke="#b45309" stroke-width="2" stroke-dasharray="7 4"/>
+  <text x="180" y="206" font-size="16" font-weight="700" fill="#92400e">① 입력 검사 guard.py (작업 1 · 예정)</text>
+  <text x="180" y="227" font-size="13" fill="#374151">범위 외 · 직접 인젝션 · 타인 정보 요청 → LLM 에 보내지 않고 즉시 거절 (팀원 A 작업 · 파일이 생기면 자동 연결)</text>
+  <line x1="600" y1="240" x2="600" y2="253" stroke="#374151" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- 3 classify -->
+  <rect x="160" y="255" width="420" height="105" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="180" y="282" font-size="16" font-weight="700" fill="#4c1d95">② 의도 분류 (LLM · JSON)</text>
+  <text x="180" y="305" font-size="13" fill="#1f2937">• 의도 17종 중 여러 개 (복합 질문)</text>
+  <text x="180" y="325" font-size="13" fill="#1f2937">• 사유(단순변심/하자) · 대상 상품 line_id</text>
+  <text x="180" y="345" font-size="13" fill="#1f2937">• 고객 주문 목록(택배사 기준 상태)을 함께 제공</text>
+  <line x1="580" y1="307" x2="618" y2="307" stroke="#374151" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- 4 misroute guard -->
+  <rect x="620" y="255" width="420" height="250" rx="10" fill="#ccfbf1" stroke="#0f766e" stroke-width="2.5"/>
+  <text x="640" y="282" font-size="16" font-weight="700" fill="#134e4a">③ ★ 오분류 방지 (코드)</text>
+  <g font-size="13" fill="#1f2937">
+    <text x="640" y="308">① 허용된 의도만 남김</text>
+    <text x="640" y="333">② 분류된 경로의 <tspan font-weight="700">키워드 근거 0</tspan> + 질문은 다른 유형</text>
+    <text x="660" y="351" fill="#c2410c">→ 의심: agent 로</text>
+    <text x="640" y="376">③ 처리기 <tspan font-weight="700">전제 조건</tspan> 불충족 (대상 주문·클레임·쿠폰 없음)</text>
+    <text x="660" y="394" fill="#c2410c">→ 그 의도만 agent 로</text>
+    <text x="640" y="419">④ 근거가 분명한데 빠진 의도 보충</text>
+    <text x="660" y="437" fill="#4b5563">'언제 와요'→배송 · '다쳤'→안전 · '등급'→혜택 · '설치'→정책</text>
+    <text x="640" y="462">⑤ 쇼핑 질문을 '범위외'로 분류 → 무효 처리</text>
+    <text x="640" y="487" fill="#134e4a" font-weight="700">결과: 처리할 의도 목록 (복합이면 여러 개)</text>
+  </g>
+
+  <!-- 범위외 -->
+  <rect x="160" y="380" width="420" height="55" rx="10" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="180" y="404" font-size="14" font-weight="700" fill="#111827">범위외 (쇼핑 키워드 없음)</text>
+  <text x="180" y="424" font-size="13" fill="#374151">"쇼핑몰 주문·배송·교환·환불 상담만 도와드릴 수 있어요"</text>
+  <line x1="618" y1="407" x2="582" y2="407" stroke="#374151" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- agent fallback path (right) -->
+  <path d="M1040 340 L1100 340 L1100 870" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-dasharray="8 5" marker-end="url(#o)"/>
+  <text x="1046" y="330" font-size="12" fill="#c2410c" font-weight="700">오분류 의심</text>
+
+  <!-- 5 handlers -->
+  <line x1="830" y1="505" x2="830" y2="518" stroke="#374151" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="160" y="520" width="880" height="335" rx="10" fill="#fff" stroke="#0f766e" stroke-width="2"/>
+  <rect x="160" y="520" width="880" height="38" rx="10" fill="#0f766e"/>
+  <text x="180" y="545" font-size="16" font-weight="700" fill="#fff">④ 유형별 처리기 (코드) — 데이터·승인 정책으로 사실 확정 → 초안(draft) + 필수 사실 + 금지 표현</text>
+  <g font-size="12.5">
+    <rect x="175" y="570" width="275" height="88" rx="8" fill="#ccfbf1" stroke="#0f766e"/>
+    <text x="188" y="592" font-weight="700" fill="#134e4a">취소 · 반품 · 교환 판정</text>
+    <text x="188" y="612" fill="#1f2937">v2 rules (상품별 조건 우선, 기한·비용)</text>
+    <text x="188" y="630" fill="#1f2937">+ 사용·착용·개봉 고지 → 불가 사유 대조</text>
+    <text x="188" y="648" fill="#4b5563">대상 모호 → 되묻기 · 결제완료 → 확인</text>
+
+    <rect x="462" y="570" width="275" height="88" rx="8" fill="#ccfbf1" stroke="#0f766e"/>
+    <text x="475" y="592" font-weight="700" fill="#134e4a">배송 조회 · 지연 · 보상</text>
+    <text x="475" y="612" fill="#1f2937">택배사 기준 상태 · 진행 중 주문 전부</text>
+    <text x="475" y="630" fill="#1f2937">요일 포함 날짜 · 제주/도서산간 +1~2일</text>
+    <text x="475" y="648" fill="#4b5563">3영업일↑ 지연 → 적립금 2,000원 (CPN-004)</text>
+
+    <rect x="749" y="570" width="276" height="88" rx="8" fill="#ccfbf1" stroke="#0f766e"/>
+    <text x="762" y="592" font-weight="700" fill="#134e4a">환불 · 교환 진행 조회</text>
+    <text x="762" y="612" fill="#1f2937">claim: 환불액 · 차감 내역 · 입금 예정일</text>
+    <text x="762" y="630" fill="#1f2937">결제수단별 영업일 (REF-004)</text>
+    <text x="762" y="648" fill="#4b5563">교환 옵션 · 주문당 1회 (REF-006)</text>
+
+    <rect x="175" y="670" width="275" height="80" rx="8" fill="#ccfbf1" stroke="#0f766e"/>
+    <text x="188" y="692" font-weight="700" fill="#134e4a">쿠폰 · 적립금 · 등급</text>
+    <text x="188" y="712" fill="#1f2937">쿠폰 복원(유효기간, CPN-010) · 보유 쿠폰</text>
+    <text x="188" y="730" fill="#1f2937">적립금 소멸 예정 · 등급 혜택(TOS-005)</text>
+
+    <rect x="462" y="670" width="275" height="80" rx="8" fill="#ccfbf1" stroke="#0f766e"/>
+    <text x="475" y="692" font-weight="700" fill="#134e4a">배송지 변경 · 배송비</text>
+    <text x="475" y="712" fill="#1f2937">결제완료·상품준비중만 변경 (SHIP-008)</text>
+    <text x="475" y="730" fill="#1f2937">제주·도서산간 추가 배송비 (SHIP-005)</text>
+
+    <rect x="749" y="670" width="276" height="80" rx="8" fill="#ccfbf1" stroke="#0f766e"/>
+    <text x="762" y="692" font-weight="700" fill="#134e4a">상담원 · 배송사고 · 안전</text>
+    <text x="762" y="712" fill="#1f2937">E10 연결 · E07 사고 · E02 당직 즉시</text>
+    <text x="762" y="730" fill="#1f2937">주말 → 콜백, 11월 30일(월) 오전 (MAN-002)</text>
+
+    <rect x="175" y="762" width="420" height="80" rx="8" fill="#ede9fe" stroke="#6d28d9"/>
+    <text x="188" y="784" font-weight="700" fill="#4c1d95">정책 문의 (저비용 RAG · LLM 1회)</text>
+    <text x="188" y="804" fill="#1f2937">승인 + 시행 중 + 공개 문서만 · 제목 가중 검색 (상위 3)</text>
+    <text x="188" y="822" fill="#1f2937">"기준 + 기준 미달·예외 비용까지" · 문서 속 지시 무시</text>
+
+    <rect x="607" y="762" width="418" height="80" rx="8" fill="#ffedd5" stroke="#c2410c" stroke-width="2"/>
+    <text x="620" y="784" font-weight="700" fill="#9a3412">안전망: v1+ agent (오분류 의심 · 처리기 없음)</text>
+    <text x="620" y="804" fill="#1f2937">LLM 이 도구 선택 · 도구 결과는 코드가 검증</text>
+    <text x="620" y="822" fill="#1f2937">이미 확인한 사실을 함께 전달 · 비싸지만 범용</text>
+  </g>
+  <line x1="1100" y1="870" x2="1027" y2="820" stroke="#c2410c" stroke-width="2.5" stroke-dasharray="8 5" marker-end="url(#o)"/>
+
+  <!-- 6 polish & validate -->
+  <line x1="420" y1="857" x2="420" y2="933" stroke="#374151" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="160" y="935" width="420" height="80" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="180" y="962" font-size="16" font-weight="700" fill="#4c1d95">⑤ 문장화 (LLM)</text>
+  <text x="180" y="985" font-size="13" fill="#1f2937">초안을 자연스럽게 · 숫자·날짜·판정은 바꾸지 말 것</text>
+  <text x="180" y="1003" font-size="13" fill="#1f2937">필수 표현은 글자 그대로 포함</text>
+  <line x1="580" y1="975" x2="618" y2="975" stroke="#374151" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="620" y="935" width="420" height="80" rx="10" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="640" y="962" font-size="16" font-weight="700" fill="#134e4a">⑥ 출력 검증 (코드)</text>
+  <text x="640" y="985" font-size="13" fill="#1f2937">필수 사실 누락 · 금지 표현 · 중국어 혼입</text>
+  <text x="640" y="1003" font-size="13" fill="#c2410c" font-weight="700">→ 하나라도 걸리면 코드 초안을 그대로 사용</text>
+  <line x1="830" y1="1015" x2="830" y2="1033" stroke="#374151" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="160" y="1035" width="880" height="60" rx="10" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="180" y="1061" font-size="16" font-weight="700" fill="#111827">최종 답변 (한국어) + 상담원 이관 코드 · Trace 기록</text>
+  <text x="180" y="1082" font-size="13" fill="#374151">예) "모니터(ORD-20261117-0001)는 CJ대한통운 배송이 지연… 11월 30일(월) 도착 예정… 3 영업일 이상 지연 시 적립금 2,000원 자동 지급"</text>
+
+  <!-- 오른쪽: 데이터 · 모델 · 운영 -->
+  <rect x="1150" y="105" width="320" height="185" rx="10" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="1170" y="132" font-size="15" font-weight="700" fill="#111827">모델 계층</text>
+  <g font-size="13" fill="#374151"><text x="1170" y="157">qwen2.5-14b-instruct</text><text x="1170" y="177">OpenAI 호환 API (vLLM)</text><text x="1170" y="197">SSH 터널 → localhost:8000</text>
+  <text x="1170" y="225" fill="#4c1d95">질문당 LLM 2회: 분류 + 문장화</text><text x="1170" y="245" fill="#4c1d95">(정책 문의는 분류 + 답변)</text><text x="1170" y="270" fill="#9a3412">agent 경로만 여러 번</text></g>
+
+  <rect x="1150" y="305" width="320" height="235" rx="10" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="1170" y="332" font-size="15" font-weight="700" fill="#111827">데이터 · 검색 계층</text>
+  <g font-size="13" fill="#374151">
+    <text x="1170" y="357" font-weight="700">시스템 데이터 (JSON)</text>
+    <text x="1170" y="377">orders · shipments · products</text>
+    <text x="1170" y="397">return_conditions · customers · coupons</text>
+    <text x="1170" y="417" fill="#b91c1c">주문 ≠ 택배사 상태 → 택배사 우선</text>
+    <text x="1170" y="447" font-weight="700">정책 문서 55개 (Markdown)</text>
+    <text x="1170" y="467">메타데이터: status · 시행기간 · visibility</text>
+    <text x="1170" y="487" fill="#b91c1c">제외 13: 폐기·초안·반려·만료·미검증</text>
+    <text x="1170" y="507" fill="#b91c1c">(REF-020 악성 지시) + 내부용 4</text>
+    <text x="1170" y="527" fill="#0f766e">→ 고객 안내 근거는 42개만</text>
+  </g>
+
+  <rect x="1150" y="555" width="320" height="540" rx="10" fill="#fefce8" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="1170" y="582" font-size="15" font-weight="700" fill="#713f12">운영 · 평가</text>
+  <g font-size="13" fill="#422006">
+    <text x="1170" y="607" font-weight="700">Trace</text><text x="1170" y="625">분류 원본·검증값·경로·도구·토큰</text>
+    <text x="1170" y="655" font-weight="700">eval_run.py</text><text x="1170" y="673">버전별 같은 케이스 비교</text><text x="1170" y="691">--data 로 자체 검증 세트</text>
+    <text x="1170" y="721" font-weight="700">결과 (v3)</text>
+    <text x="1170" y="741">공개 30개 × 3회: 90/90</text>
+    <text x="1170" y="759">자체 검증 12개 × 3회: 36/36</text>
+    <text x="1170" y="777">잘못된 안내 0 · 도구 순서 일관 100%</text>
+    <text x="1170" y="795">평균 약 1.6천 토큰 · 중앙값 4.6초</text>
+    <text x="1170" y="825" font-weight="700">오분류 방지 시험</text>
+    <text x="1170" y="843">일부러 틀린 분류 5건 → 모두 agent 로</text>
+    <text x="1170" y="873" font-weight="700">비교 (공개 30 / 자체 12)</text>
+    <text x="1170" y="891">v1+  3/30 · 1/12 · 4.5천 토큰</text>
+    <text x="1170" y="909">v2   10/30 · 2/12 · 1.0천 토큰</text>
+    <text x="1170" y="927">v3   30/30 · 12/12 · 1.6천 토큰</text>
+    <text x="1170" y="957" font-weight="700">한계</text>
+    <text x="1170" y="975">비공개 셋의 새 표현은 미보장</text>
+    <text x="1170" y="993">키워드 규칙은 표현 변화에 약함</text>
+    <text x="1170" y="1011">검증 실패 시 초안 사용 → 딱딱함</text>
+  </g>
+
+  <!-- 하단: 버전 진화 -->
+  <text x="40" y="1140" font-size="17" font-weight="700" fill="#111827">버전 진화 — 무엇을 LLM 에서 코드로 옮겼나</text>
+  <g font-size="12.5">
+    <rect x="40" y="1155" width="255" height="120" rx="10" fill="#f3f4f6" stroke="#9ca3af"/>
+    <text x="55" y="1180" font-size="15" font-weight="700" fill="#111827">v0 · Naive RAG</text>
+    <text x="55" y="1202" fill="#374151">문서 검색 → LLM 답변</text>
+    <text x="55" y="1222" fill="#b91c1c">주문 데이터 없음 · 폐기 문서 혼입</text>
+    <text x="55" y="1242" fill="#b91c1c">악성 문서(REF-020) 그대로</text>
+
+    <rect x="320" y="1155" width="255" height="120" rx="10" fill="#f3f4f6" stroke="#9ca3af"/>
+    <text x="335" y="1180" font-size="15" font-weight="700" fill="#111827">v1 · Naive Agent</text>
+    <text x="335" y="1202" fill="#374151">LLM 이 도구·순서·판정 모두</text>
+    <text x="335" y="1222" fill="#b91c1c">도구 미호출 75% · 중국어 답변</text>
+    <text x="335" y="1242" fill="#b91c1c">FREE10K 쿠폰 약속 (인젝션)</text>
+
+    <rect x="600" y="1155" width="255" height="120" rx="10" fill="#ccfbf1" stroke="#0f766e"/>
+    <text x="615" y="1180" font-size="15" font-weight="700" fill="#134e4a">v1+ · 도구 결과 검증</text>
+    <text x="615" y="1202" fill="#1f2937">LLM 이 받는 정보를 코드가 검증</text>
+    <text x="615" y="1222" fill="#0f766e">잘못된 안내 3→0 · 인젝션 차단</text>
+    <text x="615" y="1242" fill="#b91c1c">판정·누락은 여전 · 토큰 4.5천</text>
+
+    <rect x="880" y="1155" width="255" height="120" rx="10" fill="#ccfbf1" stroke="#0f766e"/>
+    <text x="895" y="1180" font-size="15" font-weight="700" fill="#134e4a">v2 · 판정을 코드로</text>
+    <text x="895" y="1202" fill="#1f2937">취소·반품 판정 = rules.py</text>
+    <text x="895" y="1222" fill="#0f766e">판정 케이스 30/30 · 1.0천 토큰</text>
+    <text x="895" y="1242" fill="#b91c1c">그 외 유형은 처리 못 함</text>
+
+    <rect x="1160" y="1155" width="310" height="120" rx="10" fill="#0f766e" stroke="#0f766e"/>
+    <text x="1175" y="1180" font-size="15" font-weight="700" fill="#fff">v3 · Hybrid</text>
+    <text x="1175" y="1202" fill="#fff">유형별 코드 경로 + 오분류 방지</text>
+    <text x="1175" y="1222" fill="#fff">+ v1+ agent 안전망</text>
+    <text x="1175" y="1242" fill="#ccfbf1" font-weight="700">공개 90/90 · 검증 36/36 · 1.6천</text>
+  </g>
+  <g stroke="#374151" stroke-width="2"><line x1="297" y1="1215" x2="318" y2="1215" marker-end="url(#a)"/><line x1="577" y1="1215" x2="598" y2="1215" marker-end="url(#a)"/><line x1="857" y1="1215" x2="878" y2="1215" marker-end="url(#a)"/><line x1="1137" y1="1215" x2="1158" y2="1215" marker-end="url(#a)"/></g>
+
+  <rect x="40" y="1295" width="1430" height="100" rx="10" fill="#f0fdfa" stroke="#0f766e"/>
+  <text x="60" y="1325" font-size="16" font-weight="700" fill="#134e4a">설계 원칙 — "LLM 에게 어디까지 맡길 것인가" (주제 PDF 핵심 설계 질문)</text>
+  <g font-size="13.5" fill="#1f2937">
+    <text x="60" y="1350">• LLM: 고객 말 이해(의도 분류) · 자연스러운 문장 · 정해진 규칙이 없는 질문(agent)     • 코드: 데이터 조회 · 정책 필터 · 가능/불가 판정 · 날짜·금액 계산 · 출력 검증</text>
+    <text x="60" y="1375">• 해결 영역: 지식 검색(정보 충돌) · 보안(간접 인젝션) · 신뢰성(정합성·할루시네이션·예외 이관) · 의도 분석(복합 질문) · 시스템 실행(비즈니스 로직·비결정성) · 성능(토큰)</text>
+  </g>
+</svg>
