@@ -132,3 +132,22 @@ py -m uv run --with sentence-transformers python chat_v3.py C0001 --v4
 ```
 
 에이전트 함수: `from cs_agent.v4_agent import run` → `run(query, {"customer_id": "C0001", "authenticated": True})` → `{"answer", "action", "escalation", "tool_calls", ...}`
+
+
+## v5 — 최종 B 방식: 프롬프트 우선순위(위계) (멘토 팁)
+
+v4 와 같은 도구·Agent loop 에 **시스템 프롬프트를 우선순위 4단계**로 재구성한 버전입니다.
+1순위 사실·보안 > 2순위 **판단 먼저** + 답에 넣을 항목 > 3순위 조회 순서 > 4순위 **조건부 행동**(확인·되묻기·상담원 연결) + 말투.
+
+| (qwen2.5-14b, 공개 30 × 1회) | v4 | v5 첫 시도 | **v5 (최종)** |
+|---|---|---|---|
+| 통과 | 11/30 | 4/30 | 10/30 |
+| action 일치 | 22/30 | 21/30 | **27/30** |
+| 금지 표현 | 1 | 0 | **0** |
+
+첫 시도는 행동 규칙을 1순위에 둬 판단 전에 묻거나 상담원에게 넘겼고(4/30), "판단 먼저 · 행동은 조건부"로 재배치해 회복했습니다. 자세한 기록: `docs/b_failure_analysis.md` 15절.
+
+```powershell
+py -m uv run --with sentence-transformers python eval_b.py --versions v4 v5 --runs 1 --cases all
+py -m uv run --with sentence-transformers python chat_v3.py C0001 --v5
+```
