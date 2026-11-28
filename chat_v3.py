@@ -3,17 +3,18 @@
   py -m uv run --with sentence-transformers python chat_v3.py            # 기본 고객 C0001
   py -m uv run --with sentence-transformers python chat_v3.py C0007      # 고객 번호 지정
   py -m uv run --with sentence-transformers python chat_v3.py C0001 --v4 # B 방식 에이전트(v4)로 대화
+  py -m uv run --with sentence-transformers python chat_v3.py C0001 --v5 # 최종 B 방식(v5, 프롬프트 위계)
 
 명령: /고객 C0013  → 고객 바꾸기 · /나가기 → 종료
 답변 아래에 [처리 경로 · 상담원 이관 코드 · 토큰 · 시간] 이 같이 나옵니다.
 """
 import sys
 
-from cs_agent import v3_hybrid, v4_agent
+from cs_agent import v3_hybrid, v4_agent, v5_agent
 
 args = [a for a in sys.argv[1:] if not a.startswith("--")]
 cid = args[0] if args else "C0001"
-agent = v4_agent if "--v4" in sys.argv else v3_hybrid
+agent = v5_agent if "--v5" in sys.argv else v4_agent if "--v4" in sys.argv else v3_hybrid
 print(f"[{agent.__name__.split('.')[-1]}] 고객 {cid} 로 로그인했어요. 질문을 입력하세요. (/고객 C0007 · /나가기)\n")
 n = 0
 while True:
