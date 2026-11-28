@@ -110,3 +110,25 @@ PUB-005(결제완료 취소 → 확인 질문), 006(배송중 취소 → 불가�
 | `cancel_order` | `order_id` | 고객의 명시적 확인 후에만 실행 |
 | `create_claim` | `order_id`, `type`, `line_ids`, `reason` | 반품/교환 접수 |
 | `escalate_to_agent` | `reason_code`(E01~E11), `summary` | MAN-001 기준 |
+
+
+## v4 — B 방식 에이전트 (멘토 피드백 반영)
+
+LLM 이 도구를 고르고, 결과를 보고 다음 행동을 정하는 Baseline B 구조를 유지한 채, 실패 원인을 먼저 분석해 **도구 · 검색(RAG) · 행동 수단**을 고친 버전입니다.
+원인 분석과 단계별 측정: `docs/b_failure_analysis.md` · 구조도: `docs/architecture_v4.png`
+
+| 파일 | 내용 |
+|---|---|
+| `cs_agent/v4_agent.py` | Agent loop + 도구 9개(list_orders, get_order, get_shipment, get_return_conditions, list_coupons, get_customer_profile, search_knowledge, escalate_to_agent, ask_customer) + 답변 자기 점검 |
+| `eval_b.py` | `eval_run.py` 와 같은 채점으로 v4 평가 |
+
+```powershell
+# 평가 (공개 30문항)
+py -m uv run --with sentence-transformers python eval_b.py --versions v1p v4 --runs 1 --cases all
+# 다른 평가 파일
+py -m uv run --with sentence-transformers python eval_b.py --versions v4 --runs 1 --cases all --data holdout_team.jsonl
+# 직접 대화
+py -m uv run --with sentence-transformers python chat_v3.py C0001 --v4
+```
+
+에이전트 함수: `from cs_agent.v4_agent import run` → `run(query, {"customer_id": "C0001", "authenticated": True})` → `{"answer", "action", "escalation", "tool_calls", ...}`

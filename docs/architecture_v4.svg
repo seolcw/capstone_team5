@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="680" viewBox="0 0 1100 680" font-family="Malgun Gothic, 'Noto Sans KR', sans-serif">
+  <style>
+    .band{fill:#eef1f6}.box{fill:#fff;stroke:#c9cfd9}
+    .t{font-size:13px;fill:#1f2533;text-anchor:middle;font-weight:600}
+    .h{font-size:17px;fill:#2a3f8f;font-weight:700}.s{font-size:11px;fill:#6b7385}
+    .side{fill:#fff;stroke:#9aa3b5;stroke-dasharray:4 3}.li{font-size:13px;fill:#1f2533}
+    .ar{stroke:#7a8296;stroke-width:1.2;fill:none;marker-end:url(#m);marker-start:url(#m)}
+    .al{font-size:10px;fill:#6b7385}.dt{font-size:13px;fill:#fff;text-anchor:middle;font-weight:600}
+    .new{fill:#fff6e5;stroke:#e0a43a}
+  </style>
+  <defs><marker id="m" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7a8296"/></marker></defs>
+
+  <rect x="270" y="14" width="350" height="40" class="box" stroke="#1f2533"/>
+  <text x="445" y="39" class="t">고객 · 로그인 세션 (고객 번호)</text>
+  <line x1="445" y1="56" x2="445" y2="80" class="ar"/>
+
+  <rect x="30" y="82" width="800" height="62" class="band"/>
+  <text x="46" y="110" class="h">입력 관문</text><text x="46" y="128" class="s">guard.py · scope_guard.py</text>
+  <rect x="200" y="96" width="140" height="34" class="box"/><text x="270" y="118" class="t">① 긴급 단어</text>
+  <rect x="350" y="96" width="160" height="34" class="box"/><text x="430" y="118" class="t">② 임베딩 유사도</text>
+  <rect x="520" y="96" width="150" height="34" class="box"/><text x="595" y="118" class="t">③ 애매하면 LLM 분류</text>
+  <rect x="680" y="96" width="135" height="34" class="box"/><text x="747" y="118" class="t">범위 밖 → 종료</text>
+  <line x1="445" y1="146" x2="445" y2="168" class="ar"/>
+
+  <!-- agent loop -->
+  <rect x="30" y="170" width="800" height="150" class="band"/>
+  <text x="46" y="198" class="h">Agent loop</text><text x="46" y="216" class="s">v4_agent.py (Baseline B 구조)</text>
+  <rect x="200" y="186" width="190" height="40" class="box"/><text x="295" y="211" class="t">LLM: 다음 행동 선택</text>
+  <rect x="420" y="186" width="190" height="40" class="box"/><text x="515" y="211" class="t">도구 실행 · 결과 반환</text>
+  <path d="M390 200 L420 200" class="ar"/><path d="M420 214 L390 214" class="ar"/>
+  <text x="625" y="203" class="s">결과를 보고 반복</text><text x="625" y="219" class="s">(최대 8회)</text>
+  <rect x="200" y="240" width="150" height="34" class="new"/><text x="275" y="262" class="t">ask_customer</text>
+  <rect x="360" y="240" width="150" height="34" class="box"/><text x="435" y="262" class="t">escalate_to_agent</text>
+  <rect x="520" y="240" width="150" height="34" class="new"/><text x="595" y="262" class="t">답변 자기 점검</text>
+  <rect x="680" y="240" width="135" height="34" class="box"/><text x="747" y="262" class="t">최종 답변</text>
+  <text x="200" y="298" class="s">확인·되묻기 / 상담원 연결 / LLM 이 도구 결과와 비교해 빠진 사실 보충</text>
+
+  <line x1="165" y1="322" x2="165" y2="352" class="ar"/><text x="172" y="341" class="al">search_knowledge</text>
+  <line x1="430" y1="322" x2="430" y2="352" class="ar"/><text x="437" y="341" class="al">판단 · 답변 작성</text>
+  <line x1="700" y1="322" x2="700" y2="352" class="ar"/><text x="707" y="341" class="al">tool call</text>
+
+  <rect x="30" y="354" width="260" height="140" class="band"/>
+  <text x="46" y="380" class="h">검색 계층</text><text x="46" y="397" class="s">승인·시행 중·공개 문서만</text>
+  <rect x="44" y="408" width="232" height="34" class="new"/><text x="160" y="430" class="t">제목 가중 + 길이 보정 순위</text>
+  <rect x="44" y="450" width="232" height="34" class="box"/><text x="160" y="472" class="t">[참고자료] 속 명령 무시</text>
+
+  <rect x="300" y="354" width="260" height="140" fill="#2a3f8f"/>
+  <text x="316" y="380" class="h" style="fill:#fff">모델 계층</text><text x="316" y="397" class="s" style="fill:#c8d0ee">vLLM · 로컬 모델</text>
+  <rect x="314" y="408" width="232" height="34" fill="none" stroke="#8fa0d8"/><text x="430" y="430" class="dt">qwen2.5-14b-instruct</text>
+  <rect x="314" y="450" width="232" height="34" fill="none" stroke="#8fa0d8"/><text x="430" y="472" class="dt">도구 선택 · 판단 · 답변</text>
+
+  <rect x="570" y="354" width="260" height="140" class="band"/>
+  <text x="586" y="380" class="h">도구 계층 (9개)</text><text x="586" y="397" class="s">결과에 다음 조회 단서 포함</text>
+  <text x="586" y="420" class="li" style="font-size:12px">list_orders · get_order · get_shipment</text>
+  <text x="586" y="440" class="li" style="font-size:12px">get_return_conditions (+기한·경과)</text>
+  <text x="586" y="460" class="li" style="font-size:12px;fill:#b06d00">list_coupons · get_customer_profile</text>
+  <text x="586" y="480" class="li" style="font-size:12px">search_knowledge · escalate · ask_customer</text>
+
+  <rect x="855" y="82" width="215" height="190" class="side"/>
+  <text x="872" y="112" class="h">운영</text>
+  <text x="872" y="142" class="li">Trace 로그 (도구·순서)</text>
+  <text x="872" y="168" class="li">품질 평가 (eval_b)</text>
+  <text x="872" y="194" class="li">원인 분석 → 단계별 수정</text>
+  <text x="872" y="220" class="li">토큰 · 응답 시간 측정</text>
+
+  <rect x="855" y="290" width="215" height="204" class="side"/>
+  <text x="872" y="320" class="h">보안</text>
+  <text x="872" y="350" class="li">입력 관문 (직접 인젝션)</text>
+  <text x="872" y="376" class="li">승인 문서 필터 (간접)</text>
+  <text x="872" y="402" class="li">세션 고객 주문만 조회</text>
+  <text x="872" y="428" class="li">개인정보 필드 제외</text>
+  <text x="872" y="454" class="li">실행 전 고객 확인</text>
+
+  <rect x="30" y="512" width="1040" height="44" class="box" stroke="#1f2533"/>
+  <text x="550" y="539" class="t">인프라 · 학교 GPU 서버 (vLLM) · SSH 터널 · uv 실행 환경</text>
+
+  <rect x="30" y="576" width="16" height="12" class="new"/><text x="54" y="587" class="li" style="font-size:12px;fill:#6b7385">원인 분석 후 새로 추가·변경한 부분 (예시 값 제거, 다음 조회 단서, 기한 계산 도구, 쿠폰·회원 도구, 검색 순위, 확인·되묻기, 자기 점검)</text>
+  <text x="30" y="612" class="li" style="font-size:12px;fill:#6b7385">흐름: 질문 → 입력 관문 → LLM 이 도구를 골라 조회 → 결과를 보고 다음 행동 결정(반복) → 확인·되묻기 / 상담원 연결 / 답변 → 자기 점검 → 고객</text>
+  <text x="30" y="634" class="li" style="font-size:12px;fill:#6b7385">판단은 LLM 이 하고, 코드는 정확한 데이터·검색 결과를 도구로 제공하는 역할만 함</text>
+</svg>

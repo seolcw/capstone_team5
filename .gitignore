@@ -24,6 +24,11 @@ results/*
 !results/20261127-191517/
 !results/20261127-192250/
 !results/scope_v3_20261127-191335.jsonl
+!results/20261128-111558/
+!results/20261128-121356/
+!results/20261128-125837/
+!results/20261128-131715/
+!results/20261128-132349/
 
 # OS / editor
 .DS_Store
